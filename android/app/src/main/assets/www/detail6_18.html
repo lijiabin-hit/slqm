@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>爱见人长，共服宣尼休假盖；恐彰已吝，谁知阮裕竟焚车</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>
+        宣尼：孔子字仲尼，后代尊为大成至圣文宣王。假盖：指"借伞"。
+    </p>
+    <p>
+       《孔子家语·致思》：孔子将出而雨，门人曰：商有益，请假焉。子曰：商为人短于财，吾闻与人交者，推长而违短，故久；吾非不知商有盖，恐不借而彰其过也。译文：孔子要出门，天下起了雨。有个弟子说：“子夏有伞，向他借了伞再出门吧！”孔子笑笑说：“子夏为人比较吝啬，我听说和人打交道要扬长避短，这样才能交往长久，我不是不知道子夏有伞，只是不想因借伞而显露他的小气罢了。”
+    </p>
+    <p>
+        上联出自《孔子家语》。孔子将出门而天要下雨了，学生们劝孔子向卜商（字子夏，孔子学生）借车盖，孔子说，我听说，要长久地与别人交好，就要表现他的长处而避开他的短处。卜商不富裕，我向他借车盖，他如果不肯的话，就使他吝啬的短处表现出来了，所以我不向他借。见（音xiàn），表现、显示。长（音cháng），长处、优点。服，叹服、心服。宣尼，孔子字仲尼，西汉平帝元始元年追溢孔子为褒成宣尼公，故可简称为宣尼。
+    </p>
+    <p>
+        《晋书·阮裕传》：阮裕字思旷，"有好车，借无不给。有人葬母，意欲借而不敢言。后裕闻之，乃叹曰："吾有车而使人不敢借，何以车为！"遂命焚之。译文：阮裕在剡县的时候，曾经有一辆非常好的车子。只要有人想借，他都会借。有一个人要为母亲送葬需要用车，心里想要借车却不敢对阮裕说。阮裕后来听说了这件事，叹息说：“我有车却让人不敢来借，要车还有什么用呢？”于是就把那辆车烧毁了。
+    </p>
+    <p>
+        下联出自《晋书·阮籍传》所附之《阮裕传》。阮裕有一辆漂亮的车子，只要有人来借，他总是高兴地答应，从不吝啬。有个人想借车给母亲办丧事，因忌讳不吉利而不敢开口。阮裕听说了，感叹地说：我有好车而使人不敢借，还要这车子干什么？便烧掉了它。彰，使……明显。竟，竟然。
+    </p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>挑荠女，采莲娃</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>
+        挑荠菜的女子，采莲子的小孩。挑荠女和采莲娃都是单纯、天真的可爱形象。荠(音jì)：一种野菜，古人多在春天采摘食用，味道甘美。娃：女子的通称。
+    </p>
+    <p>
+        十字花科荠属一年生或二年生草本植物，高可达50厘米，茎直立，基生叶丛生呈莲座状，叶柄长5~40毫米，茎生叶窄披针形或披针形，总状花序顶生及腋生，萼片长圆形，花瓣白色，花果期4~6月。荠生长在山坡、田边及路旁，野生，偶有栽培。中国各省区均有分布，全世界温带地区广泛分布。荠可全草入药，茎叶作蔬菜食用，种子含油，供制油漆及肥皂用。
+    </p>
+    <p>
+        莲子，中药名。为睡莲科植物莲的干燥成熟种子。分布于我国南北各省。具有补脾止泻，止带，益肾涩精，养心安神之功效。常用于脾虚泄泻，带下，遗精，心悸失眠。
+    <p>
+       多年生水生草本；根状茎横生，肥厚，节间膨大，内有多数纵行通气孔道，节部缢缩，上生黑色鳞叶，下生须状不定根。叶圆形，盾状，直径25-90厘米，全缘稍呈波状，上面光滑，具白粉，下面叶脉从中央射出，有1-2次叉状分枝；叶柄粗壮，圆柱形，长1-2米，中空，外面散生小刺。花梗和叶柄等长或稍长，也散生小刺；
+    </p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

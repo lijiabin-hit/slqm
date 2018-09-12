@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>三尺剑，六钧弓</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>
+        三尺剑——形容剑的长度尺，参考汉尺的长度1汉尺≈0.231米，三尺约合0.693米。
+    </p>
+    <p>
+        六钧弓——形容弓的强度，钧是古代重量单位，1钧≈30斤，六钧约合180斤（弓的开合力即拉弓所用的力量）
+    </p>
+    <p>
+        三尺长的宝剑对六钧重的硬弓。这两句话对仗工整，精巧。三对六，数字对数字，尺对钧，长度单位对重量单位，剑与弓同样是兵器。
+    </p>
+    <p>
+        在《史记》，高祖本纪中记载，汉高祖刘邦曾说：“吾以布衣提三尺剑取天下，此非天命乎？”意思就是，我本普通百姓出身，手拿三尺宝剑打下江山，这是上天赋予我的使命。
+    </p>
+    <p>
+        三尺剑的典故：高祖以亭长的身份为沛县押送徒役去郦山，徒役们有很多在半路逃走了。高祖估计等到了郦山也就会都逃光了，所以走到丰西大泽中时，就停下来饮酒，趁着夜晚把所有的役徒都放了。高祖说：“你们都逃命去吧，从此我也要远远地走了！”徒役中有十多个壮士愿意跟随他一块走。高祖乘着酒意，夜里抄小路通过沼泽地，让一个在前边先走。走在前边的人回来报告说：“前边有条大蛇挡在路上，还是回去罢。”高祖已醉，说：“大丈夫走路，有什么可怕的！”于是赶到前面，拔出三尺长剑去斩大蛇。大蛇被斩成两截，道路打开了，继续往前走了几里，醉得厉害了，就躺倒在地上，后边的人来到斩蛇的地方，看见有一老妇在暗夜中哭泣。有人问她为什么哭，老妇人说：“有人杀了我的孩子，我在哭他。”有人问：“你的孩子为什么被杀呢？”老妇说：“我的孩子是白帝之子，变化成蛇，挡在道路中间，如今被赤帝之子杀了，我就是为这个哭啊。”众人以为老妇人是在说谎，正要打她，老妇人却忽然不见了。后面的人赶上了高祖，高祖醒了。那些人把刚才的事告诉了高祖，高祖心中暗暗高兴，更加自负。那些追随他的人也渐渐地畏惧他了。</p>
+    <p>
+        六钧弓：《左传·定公八年》：“士皆坐列，曰：‘ 颜高 之弓六钧。’皆取而传观之。” 杜预 注：“ 颜高 、 鲁 人。三十斤为钧，六钧百八十斤。古称重，故以为异强。”一般将军所带的弓也就只有三钧也就是九十斤的弓，而颜高使用的则是六钧重的弓，可见其勇猛。张满弓用力六钧（即180斤），后因以指强弓。
+    </p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

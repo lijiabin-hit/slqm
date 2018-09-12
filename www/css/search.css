@@ -1,0 +1,19 @@
+.back input{
+    width: 70%;
+    position: absolute;
+    top: 10px;;
+    left: 2%;
+    height: 20px;
+    border-radius: 2px;
+    background-color: #eeeeee;
+}
+.back button{
+    position: absolute;
+    padding: 8px;
+    margin-right: 15px;
+    background: url("../img/bg5.png") no-repeat center;
+    background-size: 100% auto;
+    text-align: center;
+    font-family: myFirstFont;
+    left: 75%;
+    }

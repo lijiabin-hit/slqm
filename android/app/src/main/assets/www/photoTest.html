@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>photoTest</title>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/zzsc.js"></script>
+    <script>
+        $(document).ready(function(e) {
+            var pg = new puzzleGame({
+                img: "img/zzsc.jpg"
+            });
+        });
+    </script>
+<link href="css/zzsc.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<div class="wrap">
+
+ <div class="play_wrap">
+  <div id="play_area"></div>
+   </div>
+    <div class="play_menu">
+         <a id="play_btn_start" class="play_btn" href="javascript:void(0);" unselectable="on">开始</a>
+            <a id="play_btn_level" class="play_btn" href="javascript:void(0);" unselectable="on">
+             <span class="level_text">4 x 4</span>
+             <span class="level_icon"></span>
+             
+            </a>
+             <div class="level_menu" id="play_menu_level">
+                 <ul>
+                     <li>
+                         <a href="javascript:void(0);" level=0 >3 x 3</a>
+                        </li>
+                        <li>
+                         <a href="javascript:void(0);" level=1 >4 x 4</a>
+                        </li>
+                        <li>
+                         <a href="javascript:void(0);" level=2 >6 x 6</a>
+                        </li>
+                    </ul>
+                </div>
+
+         <p>完成：<span id="play_score">0</span></p>
+         <p>交换：<span id="play_count">0</span></p>
+            <!--<p>说明：<br>-->
+
+            <!-- -点击开始，小图片将随机打乱；<br>-->
+
+            <!-- -拖动小图片可交换位置，顺序完全正确则为成功；<br>-->
+
+            <!-- -难度分“3x3”、“4x4”、“6x6”三级；<br>-->
+   <!---->
+            <!-- -对应的分值为100、200、400；-->
+            <!---->
+            <!--</p>-->
+        </div>
+</div>
+<div style="text-align:center;clear:both">
+<!--<p>来源：<a href="http://www.mycodes.net/" target="_blank">源码之家</a></p>-->
+</div>
+</body>
+</html>

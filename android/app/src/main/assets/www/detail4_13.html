@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>竹简对毛锥</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;竹简：古代用来写字的竹片，战国至魏晋时代的书写材料。在传播媒介史上是一次重要的革命。它第一次把文字从社会最上层的小圈子里解放出来，它的出现，才得以形成百家争鸣的文化盛况，同时也使孔子、老子等名家名流的思想和文化能流传至今。
+    </p>
+     <p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;毛锥：即毛笔。据传为秦代蒙恬所创。但1954年，从湖南长沙左家公山一座战国楚墓里发掘出来了整套的书写工具，里面就有毛笔，与今时毛笔略有不同的是，其笔毫是绑在竹杆外沿的。这证明，在蒙恬之前就已经有所谓毛笔了。或许蒙恬只是毛笔的改良者。
+    </p>
+    <p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    描写毛笔的诗词
+    </p>
+    <p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    莫讶书绅苦，功成在一毫。贯休 《笔》
+    </p>
+    <p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    紫毫笔，尖如锥兮利如刀。白居易《紫毫笔 》
+    </p>
+    <p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    轻轻斑管书心事，细摺银笺写恨词。白仁甫《阳春曲题情》
+    </p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

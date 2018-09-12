@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="format-detection" content="telephone=no" />-->
+    <!--<meta name="msapplication-tap-highlight" content="no" />-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>畎浍对郊墟</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        畎（音quǎn）：田中排灌用的水沟。据《尚书·益稷》注，水沟深一尺宽一尺为畎。浍（音kuài）：田中排灌用的大水渠。据《周礼·地官》注，浍宽一丈八尺、深一丈四尺左右。郊：城外曰郊；墟：村落、集市。
+    </p>
+    <p>古人使用畎浍的诗句有：</p>
+    <p>忧鱼思舟檝，感禹勤畎浍《秋雨联句》孟郊 </p>
+    <p>以兹畎浍质，重与沧溟舍。” 《临行公车》何逊</p>
+    <p>自伤才畎浍，其奈赠珠何！《献荥阳郑公》元稹 </p>
+    <p>古人使用郊墟的诗句有：</p>
+    <p>时秋积雨霁，新凉入郊墟。《符读书城南》韩愈</p>
+    <p>伤心满目故人疎，看郊墟，尽荒芜。《琵琶记·风木馀恨》高明</p>
+    <p>典得山南半亩居，偶因行药到郊墟。《侨居神烈山下》顾炎武</p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

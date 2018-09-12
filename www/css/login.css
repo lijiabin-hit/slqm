@@ -1,0 +1,25 @@
+.text_sub{
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.text_sub button{
+    padding: 8px;
+    margin-right: 15px;
+    background: url("../img/bg5.png") no-repeat center;
+    background-size: 100% auto;
+    text-align: center;
+    font-family: myFirstFont;
+}
+input{
+    width: 55%;
+}
+select{
+    width: 55%;
+}
+textarea{
+    width: 55%;
+    height: 80px;
+    vertical-align: top;
+}

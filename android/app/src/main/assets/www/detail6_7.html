@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>分金齐鲍叔，奉璧蔺相如</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>
+        这是两个典故。上联出自《吕氏春秋》（《史记·管晏列传》下《索隐》所引）。鲍叔即鲍叔牙，春秋齐人，与管仲为知交。两人曾在南阳合伙经商，分利润时，管仲私自多取，鲍叔知道管仲家有老母且家境贫寒，不认为是管仲贪财。下联出自《史记·廉颇蔺相如列传》。讲的是完璧归赵的故事。
+    </p>
+    <p>
+        《史记·管晏列传》：管仲曰：昔与鲍叔贾，分财我多取，鲍叔不以为贪，知我贫也。译文：管仲说：“我当初贫困时，曾与鲍叔经商，分利时自己常多拿一些，但鲍叔不认为我贪财，知道我生活贫困。
+ 
+    </p>
+    <p>
+        记载在《史记·廉颇蔺相如列传》。赵得到和氏璧，秦表示愿意用十五座城池交换。赵王派蔺相如入秦。相如捧璧呈献给秦王。秦王非常高兴，把宝璧传着给妻妾和左右侍从看。相如看出秦王没有用城邑抵偿赵国的意思，便走上前去说：“璧上有个小斑点，让我指给大王看。”秦王把璧交给他，相如于是手持璧玉退后几步靠在柱子上，怒发冲冠，对秦王说：“我看大王没有给赵王十五城的诚意，所以我又取回宝璧。大王如果一定要逼我，我的头今天就同宝璧一起在柱子上撞碎！”相如手持宝璧，斜视庭柱，就要向庭柱上撞去。秦王怕他把宝璧撞碎，请求他不要如此。 
+    </p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

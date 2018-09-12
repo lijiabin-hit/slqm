@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="format-detection" content="telephone=no" />-->
+    <!--<meta name="msapplication-tap-highlight" content="no" />-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>秋雨潇潇，漫烂黄花都满径</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;潇潇：形容毛毛细雨。
+    漫烂：这里是鲜明、美丽的意思。唐朝李涉《却归巴陵途中走笔寄唐知言》诗：“不觉淹留两月餘，风光漫烂生洲渚。”</p>
+    <p>秋雨潇潇，漫烂黄花都满径:在潇潇秋雨下个不停的时节，开得绚烂的菊花花瓣铺满了曲折的小路。</p>
+    <p>与秋雨有关的诗句有：</p>
+    <p>春风桃李花开日，秋雨梧桐叶落时。 白居易《长恨歌》</p>
+    <p>渭城朝雨亦轻尘，客舍青青柳色新。王维《送元二使安西》 </p>
+    <p>水光潋艳晴方好，山色空蒙雨亦奇。苏轼《饮湖上初晴后雨》 </p>
+
+    <p>与菊花有关的诗句有：</p>
+    <p>宁可枝头抱香死，何曾吹落北风中。郑思肖《画菊》</p>
+    <p>采菊东篱下，悠然见南山。陶渊明《饮酒·其五》</p>
+    <p>不是花中偏爱菊，此花开尽更无花。元稹《菊花》</p>
+
+
+    <h2>春风袅袅，扶疏绿竹正盈窗</h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;袅袅：烟气缭绕升腾的样子。
+    扶疏：枝叶繁茂分披貌。宋朝姜夔《虞美人·咏牡丹》词：“玉盘摇动半厓花。花树扶疏，一半白云遮。”朱自清《温州的踪迹》一：“花叶扶疏，上下错落着，共有五丛。”</p>
+    <p>春风袅袅，扶疏绿竹正盈窗：春风和畅，向青烟一样，枝叶茂盛的绿竹充满了窗子。</p>
+ 
+    <p>与春风有关的诗句有：</p>
+    <p>羌笛何须怨杨柳，春风不度玉门关。王之涣《凉州词》 </p>
+    <p>爆竹声中一岁除，春风送暖入屠苏。王安石《元日》</p>
+    <p>等闲识得东风面，万紫千红总是春。朱熹《春日》 </p>
+    <p>不知细叶谁裁出，二月春风似剪刀。贺知章《咏柳》</p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

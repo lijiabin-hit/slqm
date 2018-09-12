@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="format-detection" content="telephone=no" />-->
+    <!--<meta name="msapplication-tap-highlight" content="no" />-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>无对有</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;有”指具体存在的事物，亦称实有。“无”指无形无象的虚无,《老子》论有无<老子>在中国哲学史上第一个提出否定性的范畴──“无”。它说：“无名，无地之始，有名，万物之母”,“天下万物生于有，有生于无”。《庄子》论有无战国中期，庄子以“虚无”论道，把“无”解释为纯然无有。黄老道家试图从理论上超越 “道生一”和 “有生于无”。因此他们谈话的重点不在“有”、“无”而在“无为与有为”。魏晋时期的哲学，重新把“有”、“无”提出来作为本体论的范畴加以研究。</p>
+    <p>古人使用无有的相对的诗句有：</p>
+    <p>万物生于有，有生于无。（老子：《老子·道德经》）</p>
+    <p>无内人之疏，而外人之亲。（荀子：《荀子·法行》）</p>
+    <p>命里有时终须有,命里无时莫强求。（李商隐：《无题》）</p>
+    <h2>实对虚</h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本意是指从头到脚都有遮挡，头顶有盖（遮风挡雨的地方），中间有粮食（其实是土地，但古代农民阶级能有土地的微乎其微），脚下有财富，三点均有，称作实。今意变成了，有房子就叫实，当今人们的追求与古代相差甚远，是因为建国后自己当家做主，农民同志有了土地，经济变为集中分配，只有房子需要自己搭建，所以变为实。虚，本义为大山丘。现义为空。</p>
+    <p>古人使用实虚的诗句有：</p>
+    <p>兵道者，诡异也；虚则实之；实则虚之（孙武：《孙子兵法》）</p>
+    <p>有者为实,故凡中质充满皆曰实。（黄帝：《素问·调经论》）</p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

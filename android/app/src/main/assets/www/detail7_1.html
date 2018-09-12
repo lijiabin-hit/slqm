@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="format-detection" content="telephone=no" />-->
+    <!--<meta name="msapplication-tap-highlight" content="no" />-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>金对玉</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;来往：1.来去，往返。2.偏指来、到。3.交际往来。4.金玉：意思是珍宝的通称;比喻珍贵和美好。</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    1.珍宝通称。①《左传·襄公五年》:"无藏金玉，无重器备。"②《史记·五帝本纪》:"时播百谷草木，淳化鸟兽虫蛾，旁罗日月星辰水波土石金玉，劳勤心力耳目，节用水火材物。"③晋·葛洪《抱朴子·对俗》:"金玉在九窍，则死人为之不朽。"④ 唐·杜甫《黄河》诗之二:"愿驱众庶戴君王，混一车书弃金玉。"</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    2.比喻珍贵和美好。①《诗·小雅·白驹》:"毋金玉尔音，而有遐心。"②晋·葛洪《抱朴子·钧世》:"是以古书虽质朴，而俗儒谓之堕於天也。今文虽金玉，而常人同之於瓦砾也。"③唐·韦应物《郡斋雨中与诸文士燕集》诗:"俯饮一杯酒，仰聆金玉章。"④《玉娇梨》第八回:"白公说道:'昨承佳句见投，真是字字金玉，玩之不忍释手。'"⑤唐·杜牧《代裴相公让平章事表》:"伏乞俯回天鉴，更择时贤，必能丹青帝图，金玉王度。"</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+    <h2>宝对珠</h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    宝珠：1.贵重的珍珠。2.花名。山茶的一种。亦称“宝珠茶”、“宝珠山茶”。3.花名。茉莉花的一种。即宝珠小荷花。 </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.贵重的珍珠。《荀子·富国》：“辟之是犹使处女婴宝珠，佩宝玉，负载黄金，而遇 中山 之盗也。” 汉·焦赣《易林·履之损》：“虽有宝珠，无路致之。” 宋·苏轼《广州东莞县资福寺舍利塔铭》：“此身性海一浮沤，委蜕如遗不自收，戒光定力相烝休，结为宝珠散若旒。” 清·谷应泰 《博物要览·志真珠》：“ 高邮甓社湖中昔产珠蚌，有极大蚌如门扉，中含宝珠如拳，每当望夕，其光与日争辉。”《中国民间故事选·合浦珠还》：“这海里有一颗宝珠，专在夜里发光，真是无价之宝。”</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.花名。山茶的一种。亦称“ 宝珠茶 ”、“ 宝珠山茶 ”。《广群芳谱·花谱二十·山茶》：“有鹤顶茶、玛瑙茶、宝珠茶、杨妃茶、焦萼白宝珠，不可胜数，就中宝珠为佳。” 鲁迅 《野草·雪》：“雪野中有血红的宝珠山茶，白中隐青的单瓣梅花。”</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.花名。茉莉花的一种。即宝珠小荷花。《广群芳谱·花谱二二·茉莉》：“有草本者，有木本者，有重叶者，惟宝珠小荷花最贵。”宋·王十朋《末利花》诗：“日莫园人献宝珠，化成千亿小芙蕖。”</p>
+
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

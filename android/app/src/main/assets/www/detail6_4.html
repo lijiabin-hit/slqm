@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>宝马对香车</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>
+        宝马：配有用珍宝装饰起来的马具的马。香车：即七香车，用多种香料涂饰的车。车，古有两读，此处的“车”属鱼韵，读jū；本韵内另两处“车”亦读jū。
+    </p>
+    <p>
+        运用宝马的诗词有:
+    </p>
+    <p>
+        宝马横来下建章，香车却转避驰道.(韦应物:《长安道》)
+    </p>
+    <p>
+        东风夜放花千树,更吹落,星如雨.宝马雕车香满路。（辛弃疾：《青玉案 元夕》）
+    </p>
+    <p>
+        听元宵，今岁嗟呀，愁也千家，怨也千家。那里有闹红尘香车宝马？祗不过送黄昏古木寒鸦。（王磐：《古蟾宫·元宵》）
+    </p>
+    <p>
+        元宵佳节，融和天气，次第岂无风雨。来相召、香车宝马，谢他酒朋诗侣。（李清照：《永遇乐·落日熔金》）
+    </p>
+    <p>
+        朱明日盛残花卉，琼苑争游諠帝里。宝马香车去复来，几许人心欢不已，金明水上浮仙岛，画舸龙舟非草草。世宁清静验如然，老者携小少随老。（宋太祖：《缘识》）
+    </p>
+    <p> 
+        运用香车的诗词有:
+    </p>
+    <p>
+        香车宝马，珠帘翠幕，不怕禁更敲五。霓裳曲，惊回好梦，误游紫宫朱府。吴潜永遇乐（三和）》
+    </p>
+    <p>
+        堤上莺花撩乱，香车宝马纵横。草软平沙稳。高楼两岸春风，语笑隔帘声。曾布：《水调歌头》
+    </p>
+    <p>
+        白道萦回入暮霞，斑骓嘶断七香车。春风自共何人笑，枉破阳城十万家。李商隐《无题》
+    </p>
+    <p>
+        绣鞅玉环游。灯晃帘疏笑却收。久立香车催欲上，还留。更且檀唇点杏油。花遍六么球。面旋回风带雪流。春入腰肢金缕细，轻柔。种柳应须柳柳州。（苏轼：《南乡子·绣鞅玉环游》）
+    </p>
+    <p>
+        双燕初命子，五桃新作花。王昌是东舍，宋玉次西家。小小能织绮，时时出浣纱。亲劳使君问，南陌驻香车。（王维：《杂诗》）
+    </p>
+    <p>
+        飞云驶。香车故国难回睇。芳心渐摇，迤逦吴都繁丽。忠臣子胥，预知道为邦祟。谏言先启。愿勿容其至。周亡褒姒。商倾妲己。 （董颖：《薄媚》）
+    </p>
+    <p>
+        唐昌观里东风软。齐王宫外芳名远。桂子典刑边。梅花伯仲间。笼茸锼暖雪。琐细雕晴月。谁驾七香车。绿云飞玉沙。（史达祖：《菩萨蛮·唐昌观里东风软》）
+    </p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

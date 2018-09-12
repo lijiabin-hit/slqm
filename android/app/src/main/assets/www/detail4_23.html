@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="format-detection" content="telephone=no" />-->
+    <!--<meta name="msapplication-tap-highlight" content="no" />-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>三弄笛，一围棋</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;三弄笛出自东晋桓伊，善于吹笛，时称“江左第一”。一次，他驾车外出，黄门侍郎王徽之（字子猷，书法家王羲之第五子）请他奏笛。他不认识子猷，但久闻子猷的名望。于是下车，“据胡床，奏三调。弄毕，上车而去”。显示了桓伊既有礼貌，又不巴结权贵的姿态。据《神奇秘谱》说法，流传后世的“梅花三弄”名曲，即是据此三调改编而成。此曲被改编成古琴调后，因为要在琴的不同徽位的泛音上弹奏三次，故称“三弄”。即为：“梅花一弄、弄清风；梅花二弄、弄飞雪；梅花三弄、弄光影”。
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一围棋出自《述异记》里讲述了一个“观棋烂柯”的传奇：晋朝时，信安郡石室山有个名叫王质的樵夫，一次进山去砍柴，在山中看到两个童子在下棋，王质在一旁看得津津有味。其间，一童子给了王质一枚像枣核的东西，王质吃了浑不觉饥，于是干脆坐在一旁专注观棋。棋局还没下完，一童子突然指着王质的斧头说：“你的斧头柄都已经朽烂啦！”王质这才大惊归去，回家一看，自己所认识的人都已不在人世，原来他已经在山中度过了一百年。
+    </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;三弄笛与一围棋的相对，在字面之外，还有短暂一晤和漫长遗世的对立。
+    </p>
+
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

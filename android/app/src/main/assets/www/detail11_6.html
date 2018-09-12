@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>北魏对西秦</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>
+        北魏（386年—534年）是鲜卑族拓跋珪建立的政权，也是南北朝时期北朝第一个王朝
+        。386年拓跋珪趁前秦四分五裂之际在牛川自称代王，重建代国，定都盛乐（今内蒙古呼和浩特市和林格尔县）。同年四月，改称魏王。398年六月，正式定国号为“魏” ，史称“北魏”。398年七月，道武帝拓跋珪迁都平城（今山西大同市），称帝。439年，太武帝拓跋焘统一北方。493年孝文帝拓跋宏迁都洛阳，大举改革。北魏时期，佛教兴起，佛教得到空前发展，迁都洛阳和移风易俗促进了北魏的中央集权与民族融合。
+    </p>
+    <p>
+        西秦(385年—431年)，十六国之一。陇西鲜卑族（一说属赀虏）首领乞伏国仁所建。都苑川（今甘肃兰州西固）。其国号“秦”以地处战国时秦国故地为名。《十六国春秋》始用西秦之称，以别于前秦和后秦，后世袭用之 [1]  。385年，鲜卑酋长乞伏国仁在陇西称大单于，又被前秦封为苑川王，都勇士川（今甘肃榆中）。388年，其弟乞伏乾归立，称大单于，河南王，迁都金城（今甘肃兰州西）。400年国灭于后秦，409年复国，改称秦王，迁都苑川。乞伏炽磐又迁都枹罕（今甘肃临夏市东北）。最盛时期，其统治范围包括甘肃西南部，青海部分地区。历四主，共三十七年。431年被夏国所灭。
+    </p>
+    <p>
+        北魏和西秦都是两个政权统治
+    </p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

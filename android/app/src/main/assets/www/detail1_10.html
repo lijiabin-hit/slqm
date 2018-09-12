@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="format-detection" content="telephone=no" />-->
+    <!--<meta name="msapplication-tap-highlight" content="no" />-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>沿对革</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;沿：继承；革：改变。现在沿和革组成一个词，即沿革，指事物发展和变化的过程。载怀沿革，事有不同”。——《隋书·高祖记》</p>
+    <p>有关沿革的典故</p>
+    <p>说到沿袭，有个成语，叫做“萧规曹随”讲的就是汉朝的首任相国萧何创立了规章制度，死后，曹参接班做了相国，仍照着施行。
+ 
+    曹参上位后没有“烧三把火”，好像没做啥事儿，就连汉惠帝都有些想问责他的不作为了。曹参面对惠帝的质疑说：“请陛下好好地想想，您跟先帝相比，谁更贤明英武呢？”惠帝立即说：“我怎么敢和先帝相提并论呢？”曹参又问：“陛下看我的德才跟萧何相国相比，谁强呢？”汉惠帝笑着说：“我看你好像是不如萧相国。”
+ 
+    曹参接过惠帝的话说：“陛下说得非常正确。既然您的贤能不如先帝，我的德才又比不上萧相国，那么先帝与萧相国在统一天下以后，陆续制定了许多明确而又完备的法令，在执行中又都是卓有成效的，难道我们还能制定出超过他们的法令规章来吗？”接着他又诚恳地对惠帝说：“现在陛下是继承守业，而不是在创业，因此，我们这些做大臣的，就更应该遵照先帝遗愿，谨慎从事，恪守职责。对已经制定并执行过的法令规章，就更不应该乱加改动，而只能是遵照执行。我现在这样照章办事不是很好吗？”汉惠帝听了曹参的解释后说：“我明白了，你不用再说了。”
+ 
+    <p>这是无为而治，垂拱平章的典型，代表了好的沿袭。</p>
+ 
+    <p>而在中国的历史上，改革变法则往往意味着风险。除了少数几次由雄才大略的君主发起的变法个性之外，由大臣主导的变法，绝大多数难得善终。商鞅、王安石、张居正、谭嗣同等名臣，最终都以悲剧收场。尤其是以变法强秦，为秦国一扫六合奠定基础的商鞅，最后竟落得车裂身死，堪称改革家中的悲剧性代表人物。</p>
+
+
+
+    <h2>异对同</h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;异同，共有4种意思。1.不同和相同之处。2.不同;不一致。3.引申为反对。4.反对意见;异议。</p>
+    <p>与异同相关的诗句有：</p>
+    <p>论十代兮兴毁，访五都兮异同。 梁江淹 《知己赋》</p>
+    <p>宫中府中，俱为一体，陟罚臧否，不宜异同。诸葛亮 《前出师表》</p>
+    <p>先帝在位久，德泽在人，故一日晏驾，天下奉戴嗣君，无一人敢异同者。 《续资治通鉴·宋仁宗嘉佑八年》</p>
+    <p>灵运构扇异同，非毁执政。《宋书·谢灵运传》</p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

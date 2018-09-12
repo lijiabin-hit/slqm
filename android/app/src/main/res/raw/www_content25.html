@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="format-detection" content="telephone=no" />-->
+    <!--<meta name="msapplication-tap-highlight" content="no" />-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>十&nbsp;&nbsp;蒸</h2>
+    <p>
+        <a href="detail1_1.html">
+            <ruby>新<rt>xīn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>旧<rt>jiù</rt></ruby>。
+            <ruby>降<rt>jiàng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>升<rt>shēng</rt></ruby>。
+        </a>
+    </p>
+    <p>
+        <ruby>白<rt>bái</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>犬<rt>quǎn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>苍<rt>cāng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>鹰<rt>yīng</rt></ruby>。
+    </p>
+    <p>
+        <ruby>葛<rt>gě</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>巾<rt>jīn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>藜<rt>lí</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>杖<rt>zhàng</rt></ruby>。
+    </p>
+    <p>
+        <ruby>涧<rt>jiàn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>水<rt>shuǐ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>池<rt>chí</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>冰<rt>bīng</rt></ruby>。
+    </p>
+    <p>
+        <ruby>张<rt>zhāng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>兔<rt>tù</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>网<rt>wǎng</rt></ruby>，
+        <ruby>挂<rt>guà</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>鱼<rt>yú</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>罾<rt>zēng</rt></ruby>。
+    </p>
+    <p>
+        <ruby>燕<rt>yàn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>雀<rt>què</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>鹏<rt>péng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>鹍<rt>kūn</rt></ruby>。
+    </p>
+    <p>
+        <ruby>炉<rt>lú</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>中<rt>zhōng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>煎<rt>jiān</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>药<rt>yào</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>火<rt>huǒ</rt></ruby>，
+        <ruby>窗<rt>chuāng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>下<rt>xià</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>读<rt>dú</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>书<rt>shū</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>灯<rt>dēng</rt></ruby>。
+    </p>
+    <p>
+        <ruby>织<rt>zhī</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>锦<rt>jǐn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>逐<rt>zhú</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>梭<rt>suō</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>成<rt>chéng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>舞<rt>wǔ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>凤<rt>fèng</rt></ruby>，<br>
+        <ruby>画<rt>huà</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>屏<rt>píng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>误<rt>wù</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>笔<rt>bǐ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>作<rt>zuò</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>飞<rt>fēi</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>蝇<rt>yíng</rt></ruby>。
+    </p>
+    <p>
+        <ruby>宾<rt>bīn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>客<rt>kè</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>刘<rt>liú</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>公<rt>gōng</rt></ruby>，
+        <ruby>座<rt>zuò</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>上<rt>shàng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>满<rt>mǎn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>斟<rt>zhēn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>三<rt>sān</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>雅<rt>yǎ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>爵<rt>jué</rt></ruby>；<br>
+        <ruby>迎<rt>yíng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>仙<rt>xiān</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>汉<rt>hàn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>帝<rt>dì</rt></ruby>，
+        <ruby>宫<rt>gōng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>中<rt>zhōng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>高<rt>gāo</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>插<rt>chā</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>九<rt>jiǔ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>光<rt>guāng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>灯<rt>dēng</rt></ruby>。
+    <p>
+        <ruby>儒<rt>rú</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>士<rt>shì</rt></ruby>。
+        <ruby>佛<rt>fó</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>时<rt>shí</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>僧<rt>sēng</rt></ruby>。
+    </p>
+    <p>
+        <ruby>面<rt>miàn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>友<rt>yǒu</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>心<rt>xīn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>朋<rt>péng</rt></ruby>。
+    </p>
+    <p>
+        <ruby>春<rt>chūn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>残<rt>cán</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>夏<rt>xià</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>老<rt>lǎo</rt></ruby>。
+    </p>
+    <p>
+        <ruby>夜<rt>yè</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>寝<rt>qǐn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>时<rt>shí</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>晨<rt>chén</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>兴<rt>xìng</rt></ruby>。
+    </p>
+    <p>
+        <ruby>千<rt>qiān</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>里<rt>lǐ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>马<rt>mǎ</rt></ruby>，
+        <ruby>九<rt>jiǔ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>霄<rt>xiāo</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>鹏<rt>péng</rt></ruby>。
+    </p>
+    <p>
+        <ruby>霞<rt>xiá</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>蔚<rt>wèi</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>云<rt>yún</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>蒸<rt>zhēng</rt></ruby>。
+    </p>
+    <p>
+        <ruby>寒<rt>hán</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>堆<rt>duī</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>阴<rt>yīn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>岭<rt>lǐng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>雪<rt>xuě</rt></ruby>，
+        <ruby>春<rt>chūn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>泮<rt>pàn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>水<rt>shuǐ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>池<rt>chí</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>冰<rt>bīng</rt></ruby>。
+    </p>
+    <p>
+        <ruby>亚<rt>yà</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>父<rt>fù</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>愤<rt>fèn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>生<rt>shēng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>撞<rt>zhuàng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>玉<rt>yù</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>斗<rt>dòu</rt></ruby>，<br>
+        <ruby>周<rt>zhōu</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>公<rt>gōng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>誓<rt>shì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>死<rt>sǐ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>作<rt>zuò</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>金<rt>jīn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>滕<rt>téng</rt></ruby>。
+    </p>
+    <p>
+        <ruby>将<rt>jiāng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>军<rt>jūn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>元<rt>yuán</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>晖<rt>huī</rt></ruby>，
+        <ruby>莫<rt>mò</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>怪<rt>guài</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>人<rt>rén</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>讥<rt>jī</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>为<rt>wéi</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>饿<rt>è</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>虎<rt>hǔ</rt></ruby>；<br>
+        <ruby>侍<rt>shì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>中<rt>zhōng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>卢<rt>lú</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>昶<rt>chǎng</rt></ruby>，
+        <ruby>难<rt>nán</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>逃<rt>táo</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>世<rt>shì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>号<rt>hào</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>作<rt>zuò</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>饥<rt>jī</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>鹰<rt>yīng</rt></ruby>。
+    </p>
+    <p>
+        <ruby>规<rt>guī</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>矩<rt>jǔ</rt></ruby>。&nbsp;
+        <ruby>墨<rt>mò</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>绳<rt>shéng</rt></ruby>。
+    </p>
+    <p>
+        <ruby>独<rt>dú</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>步<rt>bù</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>时<rt>shí</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>同<rt>tong</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>登<rt>dēng</rt></ruby>。
+    </p>
+    <p>
+        <ruby>吟<rt>yín</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>哦<rt>é</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>讽<rt>fěng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>咏<rt>yǒng</rt></ruby>。
+    </p>
+    <p>
+        <ruby>访<rt>fǎng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>友<rt>yǒu</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>寻<rt>xún</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>僧<rt>sēng</rt></ruby>。
+    </p>
+    <p>
+        <ruby>风<rt>fēng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>绕<rt>rào</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>屋<rt>wū</rt></ruby>，
+        <ruby>水<rt>shuǐ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>襄<rt>xiāng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>陵<rt>líng</rt></ruby>。
+    </p>
+    <p>
+        <ruby>紫<rt>zǐ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>鹄<rt>hú</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>苍<rt>cāng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>鹰<rt>yīng</rt></ruby>。
+    </p>
+    <p>
+        <ruby>鸟<rt>niǎo</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>寒<rt>hán</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>惊<rt>jīng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>夜<rt>yè</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>月<rt>yuè</rt></ruby>，
+        <ruby>鱼<rt>yú</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>暖<rt>nuǎn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>上<rt>shàng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>春<rt>chūn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>冰<rt>bīng</rt></ruby>。
+    </p>
+    <p>
+        <ruby>扬<rt>yáng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>子<rt>zǐ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>口<rt>kǒu</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>中<rt>zhōng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>飞<rt>fēi</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>白<rt>bái</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>凤<rt>fèng</rt></ruby>，<br>
+        <ruby>何<rt>hé</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>郎<rt>láng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>鼻<rt>bí</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>上<rt>shàng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>集<rt>jí</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>青<rt>qīng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>蝇<rt>yíng</rt></ruby>。
+    </p>
+    <p>
+        <ruby>巨<rt>jù</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>鲤<rt>lǐ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>跃<rt>yuè</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>池<rt>chí</rt></ruby>，
+        <ruby>翻<rt>fān</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>几<rt>jǐ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>重<rt>zhòng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>之<rt>zhī</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>密<rt>mì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>藻<rt>zǎo</rt></ruby>；<br>
+        <ruby>颠<rt>diān</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>猿<rt>yuán</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>饮<rt>yǐn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>涧<rt>jiàn</rt></ruby>，
+        <ruby>挂<rt>guà</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>百<rt>bǎi</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>尺<rt>chǐ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>之<rt>zhī</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>垂<rt>chuí</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>藤<rt>téng</rt></ruby>。
+    </p>
+</div>
+<!--<div class="ui-grid-d bottom">-->
+    <!--<div class="ui-grid-a ceshi"><a href="test1.html">测试本章</a></div><div class="ui-grid-b ceshi">-->
+    <!--<img src="img/pre.png">-->
+<!--</div><div class="ui-grid-c ceshi">-->
+    <!--<img src="img/play.png">-->
+<!--</div><div class="ui-grid-d ceshi">-->
+    <!--<img src="img/next.png">-->
+<!--</div><div class="ui-grid-d ceshi"><a href="video1.html">视频学习</a>-->
+<!--</div>-->
+<!--</div>-->
+</body>
+
+</html>

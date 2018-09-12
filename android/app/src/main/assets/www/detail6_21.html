@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>犁锄对耒耜</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>
+        犁是一种耕地的农具，是由在一根横梁端部的厚重的刃构成。其通常系在一组牵引它的牲畜或机动车上，也有用人力来驱动的，用来破碎土块并耕出槽沟从而为播种做好准备。
+    </p>
+    <p>
+        最早农民是用简易的挖掘棒或锄头来挖垦农田的。农田挖好后，他们把种子抛撒在地里，希冀着能有一个好的收成。早期的犁是用Y形的木段制作的，下面的枝段雕刻成一个尖头，上面的两个分枝则做成两个把手。当将犁系上绳子并由一头牛拉动时，尖头就在泥土里扒出一道狭小的浅沟。农民可以用把手来驾驶犁。
+    </p>
+    <p>
+        中国的犁是由耒耜发展演变而成。最初可能仍名“耒耜”。用牛牵拉耒耜以后，才渐渐使犁与耒耜分开，有了“犁”的专名。犁约出现于商朝，见于甲骨文的记载。早期的犁，形制简陋。西周晚期至春秋时期出现铁犁，开始用牛拉犁耕田。西汉出现了直辕犁，只有犁头和扶手。而缺少耕牛的地区，则普遍使用“踏犁”。
+    </p>
+    <p>
+        耒耜（音lěisì）：古代一种像犁的翻土农具。耜用于起土。耒是耜上的弯木柄。也用做农具的统称。一种较为原始的翻土用的农具。耒形如木叉，是柄，耜形如铁锹，装在耒的下端，用来掘土。
+    </p>
+    <p>
+        先秦时期的主要农耕工具。耒为木制的双齿掘土工具，起源甚早。耜为曲柄起土的农器，即手犁。
+    </p>
+    <p>
+        运用耒耜的诗词有：
+    </p>
+    <p>
+       孟春之月，天子亲载耒耜，措之于参保介之御间。郑玄注：“耒，耜之上曲也。”《礼记·月令》
+    </p>
+    <p>
+        陈良之徒陈相，与其弟辛，负耒耜而自宋之滕。《孟子·滕文公上》孟子
+    </p>
+    <p>
+        敌既压境，始起而夺其农民之耒耜，强易以未尝闻之后膛枪礮，使执以御敌，不聚歼其兵而馈械于敌，夫将焉往？一说耒、耜为两种农具。《仁学》谭嗣同
+    </p>
+    <p>
+        国家丁口连四海，岂无农夫亲耒耜。《寄卢仝》 韩愈
+    </p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

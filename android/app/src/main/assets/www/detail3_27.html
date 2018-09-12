@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="format-detection" content="telephone=no" />-->
+    <!--<meta name="msapplication-tap-highlight" content="no" />-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>苏武牧羊，雪屡餐于北海</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这讲的是汉朝名臣苏武的故事。</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;苏武在天汉元年（公元前100年）奉命以中郎将持节出使匈奴，被匈奴人扣留囚禁起来，不给他喝的吃的。天下雪，苏武就卧着嚼雪，同毡毛一起吞下充饥，几日不死。匈奴以为神奇，就把苏武迁移到北海边（今贝加尔湖）没有人的地方，让他放牧公羊，说等到公羊生了小羊才得归汉。 苏武迁移到北海后，粮食运不到，只能掘取野鼠所储藏的野生果实来吃。他拄着汉廷的符节牧羊，睡觉、起来都拿着，以致系在节上的牦牛尾毛全部脱尽。苏武历尽艰辛，留居匈奴十九年持节不屈。至始元六年（前81年），方获释回汉。苏武去世后，汉宣帝将其列为麒麟阁十一功臣之一，彰显其节操。</p>
+
+
+    <h2>庄周活鲋，水必决于西江</h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这讲的是庄子编的一则寓言。也是成语“涸辙之鲋”的由来。</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;战国时期，宋国庄周家贫，常常是吃了上顿没有下顿。有一次，庄周家里断粮了，无奈之下，他到监河侯那里去借粮米。监河侯听了，故作大方地说：“好啊，没有问题！不过，等我收了租地的租钱，才能借给你三百斤粮食，可以吗？”庄周听了很生气，他也不直接戳穿对方的谎话，就讲了一个故事：昨天我在路上走，在路上听见救命声。我四处张望，原来是车辙里的一条鲋鱼。鲋鱼见了我，忙大声喊道：“老先生，救我！”我问它：“鲋鱼啊，你怎么啦？”它说：“我从东海被冲到这里。您能给我一桶水，救救我吗？”我慷慨地点头答应道：“没问题，我这就去南方劝说吴王和越王，引来西江的水救你，可以吗？那里是水乡泽国，水多得不得了。”鲋鱼听了，非常生气地说：“您这是什么话！现在只要有一桶水就可以救活我，而您却要到南方之后，放西江的水来救我。到那时，您恐怕只有到干鱼店里来找我了！”庄周讲完这个故事，就头也不回地走了。</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这两个故事里，“公羊生子”和“西江决水”都是毫无诚意的虚伪作态。</p>
+
+
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

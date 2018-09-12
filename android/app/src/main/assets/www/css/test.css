@@ -1,0 +1,12 @@
+.content div{
+    font-family: myFirstFont;
+    font-size: 40px;
+    margin-top: 50px;
+    text-align: center;
+    padding: 50px;
+    background: url("../img/bg5.png") no-repeat center;
+    background-size: 250px auto;
+}
+.content div:first-child{
+    margin-top: 80px;
+}

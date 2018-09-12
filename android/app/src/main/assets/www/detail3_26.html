@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="format-detection" content="telephone=no" />-->
+    <!--<meta name="msapplication-tap-highlight" content="no" />-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>主簿栖鸾名有览，治中展骥姓惟庞</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    主簿：县令的属官，主管文书簿籍之事。这里讲的是东汉名士仇览的故事。</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    东汉考城县令王涣，崇尚以严猛治政。他问善以德教感化犯人的主簿仇览说：“你就没有‘鹰鹯（两种猛禽，比喻勇猛）之志’吗？”仇览说：“鹰鹯不如鸾凤（鸾鸟和凤凰，比喻美善）。”王涣说：“我这小县衙不是你这大贤久留之地。”遂赠仇览路费，推荐他到京城太学发展。仇览后成为著名的贤人，被誉为方正之士。</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    治中展骥姓惟庞 这讲的是三国谋士庞统投效刘备的故事。治中，古代官职，仅次于别驾，相当于副州长。</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    庞统投靠刘备后，因其貌不扬，刘备一开始也没重视他，只是任命庞统当了个耒阳县令，庞统到任后却不愿管事。不久，就被免官。鲁肃知道后，写信对刘备说：“庞统不只是个县令之才，得让他当州官，才能施展其千里马之才。”刘备这才倚重庞统，并在其辅佐之下，取得西川，成就霸业。可惜，眼看革命即将成功，庞统却在落凤坡中箭身死。年仅三十六岁，后追赐统为关内侯，谥曰靖侯。
+    </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    庄生晓梦迷蝴蝶，望帝春心托杜鹃。李商隐《锦瑟》
+    </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    东家蝴蝶西家飞,白骑少年今日归。李贺《蝴蝶飞》
+    </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    留连戏蝶时时舞，自在娇莺恰恰啼。杜甫《江畔独步寻花》
+    </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    与蝉鸣有关的诗句有
+    </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    今朝蝉忽鸣，迁客若为情？便觉一年老，能令万感生。唐•司空曙《新蝉》
+    </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    一闻愁意结，再听乡心起。渭上新蝉声，先听浑相似。衡门有谁听？日暮槐花里。白居易《早蝉》
+    </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    蝉声未发前，已自感流年。一入凄凉耳，如闻断续弦。刘禹锡《答白刑部闻新蝉》
+    </p>
+
+
+
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

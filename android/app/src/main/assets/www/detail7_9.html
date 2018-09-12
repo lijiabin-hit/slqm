@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="format-detection" content="telephone=no" />-->
+    <!--<meta name="msapplication-tap-highlight" content="no" />-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>人处岭南，善探巨象口中齿</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;岭南：是指中国南方的五岭之南的地区，相当于现在广东、广西、海南全境，以及湖南、江西等省的部分地区。</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;据说大象会很精心埋藏自己脱落的牙齿。万震《南州异物志》载：“象脱牙犹自爱惜，掘地藏之。人欲取，必作假牙代之，不令其（指大象）见，见则后不藏故处。”而岭南人熟悉大象的习性，因此善于寻获珍贵的象牙。</p>
+
+    <h2>客居江右，偶夺骊龙颔下珠</h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;江右：即今江西。唐朝于开元中分置江南为东、西两道，主属江南西道，“江西”之名缘于此；宋称江南西路，元代设江西等处行中书省，“江西省”之名始此。而古人在地理上以东为左，以西为右，故“江西”又别称“江右”。清魏禧《日录·杂说》：“江东称江左，江西称江右，何也？曰：自江北视之，江东在左，江西在右耳。”</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;骊（音lí）龙：黑色的龙。据《庄子·列御寇》说，价值千金的宝珠，一定藏于深渊之中的骊龙的颔（音hàn）下。骊龙颌（音何）下珠：就是说其颌下有宝珠，须等其睡着之后方能取得。</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;有个拜会过宋王的人，宋王赐给他车马十乘，他就依仗这些车马在庄子面前炫耀。</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;很善于讲寓言的庄子就给他讲了一个故事：“传说江左地区有个贫穷老人，靠编织苇席为生。一天，他的儿子潜入深潭，得到一枚价值千金的宝珠。父亲生气地说：“快拿石头把它砸了！千金之珠，肯定出自潭底黑龙的下巴，你能取到这样的宝珠，一定是正赶上黑龙睡着了；假如黑龙醒着，你还有一点生还的希望吗？”</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;庄子接着说道，“如今宋国的险恶，远不只是深深的潭底；而宋王的凶残，也远非沉睡的黑龙可比。你能从宋王那里获得十乘车马，也一定是遇上宋王睡着了。倘若宋王一旦醒过来，你很可能也将要粉身碎骨了。”</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这两句的对应，讲的是，岭南人凭借规律和技巧获得象牙，江左小伙却是凭借运气和侥幸得到了龙珠，都是收获，后者却有着莫大的风险。</p>
+    
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

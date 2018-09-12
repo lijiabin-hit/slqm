@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="format-detection" content="telephone=no" />-->
+    <!--<meta name="msapplication-tap-highlight" content="no" />-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>贤对圣</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    贤对圣：孔子被后世尊为圣人。据《史记》记载，孔子有弟子三千，其中精通六艺者七十二人，被称作“七十二贤人”。
+    </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    1.圣人与贤人的合称;亦指品德高尚,有超凡才智的人。明·宋濂《送东阳马生序》既加冠,益慕圣贤之道。</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    2.圣君和贤臣的合称。①唐·韩愈 《进学解》:"方今圣贤相逢，治具毕张。"②宋·王得臣 《麈史·国政》:"然莱公非赖 章圣渊谋神断，先发於中，而独以倚成，又何以施其力哉?圣贤相济，呜呼盛矣!"③清·龚炜《巢林笔谈续编》卷上:"圣贤相遭，君臣契合，足令千载下感激欲涕也。"</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    3.泛称神、仙、佛、菩萨等。①《敦煌变文集·维摩诘经讲经文》:"如生如灭理皆明，无相无为法不二，圣贤 弥勒 一雷同，怎生得受菩提记。"②元 王实甫 《西厢记》第一本第一折:"数了罗汉，参了菩萨，拜了圣贤。"③明 沈鲸 《双珠记·真武灵应》:"空中果有圣贤，猛可地威灵宣现，云霄旋转，推移路一千。"④《天地会诗歌选·<八拜歌>之二》:"五拜五祖为尊长，六拜六祖六圣贤。"</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    4.清酒与浊酒的并称。亦泛指酒。①唐·白居易 《和梦游春诗一百韵》:"九酝备圣贤，八珍穷水陆。"②宋·苏辙 《九日阴雨不止病中把酒示诸子》诗之三:"庭菊兼黄白，村醪杂圣贤。"③金·麻革《题李氏寓酒轩》:"我亦颇解饮，圣贤时一中。"④清·钱谦益 《采花酿酒歌示河东君》:"请从酒国徵谱牒，为尔罗缕辨圣贤。"⑤清·方文《饮梅周文秋庄》诗之二:"有酒频斟酌，何论圣与贤。"参见" 圣人 "。</p>
+
+
+
+    <h2>智对愚</h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    智慧和愚鲁。
+    </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    战国古籍《列子·汤问》里讲了一个《愚公移山》的寓言故事。愚公家门前有王屋和太行两座大山挡着路，他决心把山平掉，另一个“聪明”的智叟笑他太傻，认为这不可能。愚公说：“我死了有儿子，儿子死了还有孙子，子子孙孙无穷无尽的，而山又不会再长高，何愁挖不平它呢？”最终，愚公坚持不懈的精神感动了天帝，天帝就命天神搬走了两座大山。
+    </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    在这个故事里，愚公未必真是愚蠢的，智叟也未必就是正确的。现实生活中，也常有小聪明者不及下笨功夫之人有成就的现象。
+    </p>
+
+
+
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="format-detection" content="telephone=no" />-->
+    <!--<meta name="msapplication-tap-highlight" content="no" />-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>来对往</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;来往：1.来去，往返。2.偏指来、到。3.交际往来。4.谓重复多次。5.犹言上下，左右，表示概数。</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    1.来去，往返。宋玉《神女赋》:"精交接以来往兮，心凯康以乐欢。"唐·李白 《大猎赋》:" 大章 按步以来往， 夸父 振策而奔走。"明·刘基《途中见去雁》诗:"昔与雁同归，今来雁北飞。殷勤祝过雁，来往莫相违。"杨朔 《三千里江山·不是尾》:"天空腾起更多小燕子，来往回旋，每架后尾都拖着道白烟。"</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    2.偏指来、到。唐·刘长卿 《喜鲍禅师自龙山至》诗:"杖锡闲来往，无心到处禅。"清·纪昀 《阅微草堂笔记·滦阳消夏录六》:" 沧州 瞽者 刘君瑞 ，尝以弦索来往余家。"</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    3.交际往来。《史记·吕不韦列传》:"[ 华阳夫人 ]从容言 子楚 质於 赵 者绝贤，来往者皆称誉之。"唐 韩愈 《与孟尚书书》:"与之语，虽不尽解，要自胸中无滞碍，以为难得，因与来往。"《红楼梦》第一○五回:" 贾政 听了，心想:'和 老赵 并无来往，怎么也来?'"曹禺 《日出》第一幕:"我不明白你为什么跟这种东西来往?"</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    4.谓重复多次。《西游记》第二四回:"[ 清风 ]忙入人参园里，倚在树下，望上查数;颠倒来往，只得二十二个。"</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    5.犹言上下，左右，表示概数。《儿女英雄传》第四回:"那女子走到跟前，把那块石头端相了端相，见有二尺多高，径圆也不过一尺来往，约莫也有个二百四五十觔重。"《老残游记》第十四回:"总不到顿把饭的工夫，水头就过去，总不过二尺来往水。"郭沫若 《归去来·东平的眉目》:"《七请》本只是三千字来往的文章。" 人来人往 来而不往非礼也</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;与来往有关的诗词</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;人事有代谢，往来成古今。孟浩然《与诸子登岘山》</p>
+
+
+    <h2>密对稀</h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    稀松疏密。出自: 清·黄六鸿《福惠全书·莅任·览志书》:"则形胜之奥衍阨塞，租庸之多寡轻重，烟户之盛衰稀密，咸有所稽，而政理用是以取衷焉。" </p>
+
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;与稀密有关的诗词</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;山密夕阳多，人稀芳草远。杜牧《长安送人》</p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

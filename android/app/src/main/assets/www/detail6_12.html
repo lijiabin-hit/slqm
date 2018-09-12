@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>六朝对三国</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>
+        六朝：《历代都会考》：吴始都于建业（今南京），后东晋、宋、齐、梁、陈相继建都于此，号六朝。三国：蜀、魏、吴。
+    </p>
+    <p>
+        六朝：有南六朝（指吴、东晋和南朝的宋、齐、梁、陈，它们均建都于今南京）和北六朝（指魏、晋和北朝的后魏、北齐、北周，以及隋，它们均建都于北方）之分，今一般泛指三国至隋这段时期内南北两方的各个朝代。
+    </p>
+    <p>
+        指六朝的诗词有：
+    </p>
+    <p>
+        岁晚念行役，江阔渺风烟。六朝文物何在，回首更凄然。《水调歌头·岁晚念行役》周紫芝
+    </p>
+    <p>
+        万里驰驱曾远戍，六朝涵养忝遗民。清闲即是桃源境，常笑渊明欲问津。《遣兴》陆游
+    </p>
+    <p>
+        自六朝、用武诧荆州，襟喉重疆陲。更西风似箭，峡江如线，事势夔夔。《八声甘州·自六朝》李曾伯
+    </p>
+    <p>
+        倒指六朝事，江城不忍登。燕巢非故宅，兔窟遍诸陵。《六朝》曾极
+    </p>
+    <p>
+        六朝更代几兴亡，满地黄花只旧香。水鸟不知人事改，双飞犹自恋寒塘。《六朝旧迹》李时可
+    </p>
+    <p>
+        想重来新雁，伤心湖上，销减红深翠窈。小楼寒、睡起无聊，半帘晚照。《瑞鹤仙·丙午重九》吴文英
+    </p>
+    <p>
+        运用的三国诗词有：
+    </p>
+    <p>
+        有酒无肴，柰何良夜，客有鲈鱼相惠。如此山川，几何日月，三国竟成何事《苏武慢·有酒无肴》凌云翰
+    </p>
+    <p>
+        大江东去，浪淘尽，千古风流人物。故垒西边，人道是，三国周郎赤壁。《念奴娇 赤壁怀古》苏东坡
+    </p>
+    <p>
+        三国英雄千载矣，开胜依然如故。《贺新郎·冷眼三边处》姚勉
+    </p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

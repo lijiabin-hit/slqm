@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>野渡燕穿杨柳雨，芳池鱼戏芰荷风</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>野渡：荒落之处或村野的渡口。唐朝韦应物《滁州西涧》诗：“春潮带雨晚来急，野渡无人舟自横。”宋朝吴潜《海棠春·郊行》词：“云梢雾末，溪桥野渡，尽是春愁落处。”清朝沉自友的《平沙滩》诗：“野渡伤归客，斜阳冷钓船。”
+    </p>
+    <p>芰（jì）：古书上指菱。菱,俗称菱角。两角的叫菱,四角的叫芰。芰荷：出水的荷,指荷叶或荷花。比如《红楼梦》中的《紫菱洲歌》中有“池塘一叶秋风冷，吹散芰荷红玉影”的诗句。
+    </p>
+    <p>燕子在郊野渡口烟雨蒙蒙的杨柳树间飞舞。这可能是宋朝著名词人柳永《定风波》中“日上花梢，莺穿柳带”和宋朝佚名词人《失调名》中“双双飞燕柳边轻”词意的化用。
+    </p>
+    <p>鱼儿在芳草池塘香气浓浓的荷花丛中嬉游。这应该是唐代诗人郑巢《陈氏园林》中“蝉鸣槐叶雨，鱼散芰荷风”和汉乐府《江南》中“莲叶何田田，鱼戏莲叶间”诗句的化用。
+    </p>
+    <p>这两句是借燕子和游鱼的灵动，抒发自由、欢快的情绪，从而形成心境的对应。
+    </p>
+
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

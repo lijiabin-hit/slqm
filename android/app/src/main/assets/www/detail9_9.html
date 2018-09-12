@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>缓抚琴弦，像流莺而并语；斜排筝柱，类过雁之相挨</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>
+        轻缓抚弄琴弦，发出像黄莺交流啼唱一样婉转美妙的乐声。形容演奏者技艺高深。
+    </p>
+    <p>
+        关于流莺的诗词：
+    </p>
+    <p>
+        间关莺语花底滑，幽咽泉流冰下难《琵琶行》白居易
+    </p>
+    <p>
+        朱弦弹绝，玉笙吹遍。粗识国风关雎乱，羞学流莺百啭。《席上闻歌有感》刘克庄
+    </p>
+    <p>
+        翠苑红芳晴满目。绮席流莺，上下长相逐。《蝶恋花·翠苑红芳晴满目》欧阳修
+    </p>
+    <p>
+        碧桃满树，风日水滨。柳阴路曲，流莺比邻。《二十四诗品》司空图
+    </p>
+    <p>
+        关于琴弦的诗词：
+    </p>
+    <p>
+       奈壮怀销铄，病费医治。漫道琴弦绿绮，游鱼听、山水谁知。《满庭芳·华发苍头》洪适
+    </p>
+    <p>
+        寒入竹窗茅舍，听琴弦声绝。从他拂面去寻梅，香吐是时节。《好事近·六幕冻云凝》王千秋
+    </p>
+    <p>
+        一筝居中在前，两边依次向后呈斜边排开，犹如飞行中的"人"字形雁队。这是唐代李商隐《昨日》中“二八月轮蟾影破，十三弦柱雁行斜”诗意的化用。挨：一个接一个地排列
+    </p>
+    <p>
+        筝柱为筝上的弦柱。每弦一柱﹐可移动以调定声音。
+    </p>
+    <p>
+        运用筝柱的诗词有：
+    </p>
+    <p>
+        千里有同心，十年一会面。当杯缓筝柱，倏忽催离宴。《送崔十三东游》钱起
+    </p>
+    <p>
+        浦冷鸳鸯去，园空蛺蝶寻。蜡花长递泪，筝柱镇移心。《独居有怀》李商隐
+    </p>
+    <p>
+        燕子（Swallow）学名家燕，是雀形目燕科74种鸟类的统称。形小，翅尖窄，凹尾短喙，足弱小，羽毛不算太多。羽衣单色，或有带金属光泽的蓝或绿色；大多数种类两性都很相似。燕子消耗大量时间在空中捕捉害虫，是最灵活的雀形类之一，主要以蚊、蝇等昆虫为主食，是众所周知的益鸟。在树洞或缝中营巢，或在沙岸上钻穴，或在城乡把泥黏在楼道、房顶、屋檐等的墙上或突出部上为巢。每产3∼7卵。
+    </p>
+    <p>
+        燕是典型的迁徙鸟。繁殖结束后，幼鸟仍跟随成鸟活动，并逐渐集成大群，在第一次寒潮到来前南迁越冬。
+    </p>
+    <p>
+        燕子南北迁徙的科学依据： 鸟类在北方地区繁殖的好处是北方地区夏季昼长夜短，有更长的白天可以觅食、哺育幼雏、避免在物种繁多的南方地区繁殖所须面临的巢位与食物竞争，并且北方地区夏季的昆虫量也比南方地区丰富，同时北方地区天敌较少，天敌的捕食压力相对较低。但是北方地区冬季气候严寒，经常面临食物缺乏的问题。在南方地区则相反，繁殖季面临巢位与食物资源的强烈竞争，同时天敌的捕食压力也比较大，但是冬季的气候温和，且冬季食物资源也比北方地区丰富很多。候鸟则因为夏天在北方地区繁殖，冬天在南方地区过冬，而兼取两地的好处。 （这里北方是相对南方热带地区而言的，实际上大多数燕子北方呆的地方是季风气候的温带，并不是很冷很冷的那个北方）
+    </p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="format-detection" content="telephone=no" />-->
+    <!--<meta name="msapplication-tap-highlight" content="no" />-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>楼对阁</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;楼阁，泛指楼房。阁，架空的楼。供远眺，休憩，藏书或供佛。</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国古代建筑中的多层建筑物。早期楼与阁有所区别，楼指重屋，多狭而修曲，在建筑群中处于次要位置;阁指下部架空、底层高悬的建筑，平面呈方形，两层，有平坐，在建筑群中居主要位置。后来楼与阁互通，无严格区分。楼阁多为木结构，构架形式有井傒式、重屋式、平坐式、通柱式等。佛教传入中国后，大量修建的佛塔即为楼阁建筑。</p>
+    <p>古人描写楼阁的诗句有：</p>
+    <p>滕王高阁临江渚,佩玉鸣鸾罢歌舞。王勃《滕王阁》</p>
+    <p>楼阁宜佳客，江山入好诗。白居易《江楼早秋》</p>
+    <p>吴宫好风月，越郡多楼阁。白居易《和微之四月一日作》 </p>
+    <p>钟鼓寒，楼阁暝，月照古桐金井。韦庄《更漏子》 </p>
+
+
+
+    <h2>户对窗</h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;户：古代也称门为户。</p>
+
+    <p>古人描写窗户的诗句有：</p>
+    <p>已讶衾枕冷，复见窗户明。夜深知雪重，时闻折竹声。白居易《夜雪》</p>
+    <p>窗含西岭千秋雪，门泊东吴万里船。杜甫的《绝句》 </p>
+    <p>何当共剪西窗烛,却话巴山夜雨时。李商隐《夜雨寄北》</p>
+    <p>小轩窗。正梳妆。相顾无言，惟有泪千行。苏轼《江城子·乙卯正月二十日夜梦记》 </p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

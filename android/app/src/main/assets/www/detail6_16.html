@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>花残无戏蝶，藻密有潜鱼</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>
+        花残了没有游戏的蝴蝶，茂密的海藻中有潜藏的鱼。
+    </p>
+    <p>
+        指花残的诗词有：
+    </p>
+    <p>
+        凄凉无戏蝶，零落在苍苔。《伤雨后牡丹》刘昭禹
+    </p>
+    <p>
+        愁黛颦成月浅，啼妆印得花残。《西江月·愁黛颦成月浅》晏几道
+    </p>
+    <p>
+        相见时难别亦难，东风无力百花残。春蚕到死丝方尽，蜡炬成灰泪始干。《无题》李商隐
+    </p>
+    <p>
+        指戏蝶的诗词有：
+    </p>
+    <p>
+        青女无端工翦彩，紫姑有祟曾迷赤。但双双、戏蝶绕空枝，飞还息。《满江红·糁径红裀》刘克庄
+    </p>
+    <p>
+        阳和二月芳菲遍，暖景溶溶。戏蝶游蜂。《采桑子·阳和二月芳菲遍》晏殊
+    </p>
+    <p>
+        指藻密潜鱼的诗词有：
+    </p>
+    <p>
+        栖凤安于梧，潜鱼乐于藻。《玩松竹二首》白居易
+    </p>
+    <p>
+        藻密难呼金鲫，柳疏未啭黄鹂。华发无重黑理，烧痕有再青时。《春日即事六言》刘克庄
+    </p>
+    <p>
+        万顷苍茫外，三年种植初。路回深吠犬，藻密暗游鱼。《湖庄杂诗》曹彦约
+    </p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

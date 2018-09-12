@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>岭北对江东</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>
+        岭北又称漠北，汉时外长城，唐时燕然都护府即是此处。元时又称岭北行省，中国元朝行中书省之一，政治军事中心和宁（即和林），统辖大体鞑靼瓦剌地区。东接辽阳行省，南隔大漠与中书省和甘肃行省辖境相接。16世纪末17世纪初沙俄南下派出探险队屠灭岭北大量汗国，至康熙时清廷调集全国红衣大炮炮轰沙俄探险者石垒，之后双方多次谈判划界。岭北正如雍正皇帝所说:“中国之一统,始于秦;塞外之一统,始于元;而极盛于我朝,自古中外一家,幅员极广,未有如我朝者也”。
+    </p>
+    <p>
+        元时的岭北行省：岭北又称漠北，汉时外长城，唐时燕然都护府即是此处。元时又称岭北行省，中国元朝行中书省之一，政治军事中心和宁（即和林），统辖大体鞑靼瓦剌地区。东接辽阳行省，南隔大漠与中书省和甘肃行省辖境相接。16世纪末17世纪初沙俄南下派出探险队屠灭岭北大量汗国，至康熙时清廷调集全国红衣大炮炮轰沙俄探险者石垒，之后双方多次谈判划界。岭北正如雍正皇帝所说:“中国之一统,始于秦;塞外之一统,始于元;而极盛于我朝,自古中外一家,幅员极广,未有如我朝者也”。
+    </p>
+    <p>
+        江东是一个人文地理名词，自古以来属于汉族地区。史记卷七最早有江东记载。
+    </p>
+    <p>
+        因长江在自芜湖至南京一段向东北方向斜流，而以此段江为标准确定东西和左右。 历史变迁，古以中原为中心，长江以南为外，外即表，故称江南为“江表”。又因古人以东为左，位于长江之东，故又称“江左”。有人认为九江属于江西，而以金陵至九江一段长江分东西为误。 顾炎武在《日知录》中写道，“江西之名殆不可晓，全司之地并在江南，不得言西。” “今之所谓江北，昔之所谓江西也。故晋《地理志》以庐江、九江自合肥以北至寿春，皆谓之江西。今人以江、饶、洪、吉诸州为江西，是因唐贞观十年，分天下为十道，而江南为东西二道。後人省文，但称江东、江西尔。今之作文者乃曰大江以西，谬矣。”认为古代的江西是指长江以北，而后人以政区概念混淆正是谬论。所以正如有些人的言论史书上最初提到的江东江西是一个自然地理概念，并不是政区的概念。
+    </p>
+    <p>
+        江东的典故：楚汉相争时期，项羽率领8000江东子弟组成的部队攻打秦军，他们越战越勇，势力也越来越大。由于项羽刚愎自用，听不进部下的意见，一意孤行，被刘邦的汉军围困在垓下乌江边，四面楚歌，江东子弟死伤无数，项羽感觉没脸见江东父老就拔剑自刎。
+    </p>
+    <p>
+        【出处】项王笑曰：‘且籍与江东子弟八千人渡江而西，今无一人还，纵江东父老怜而王我，我何面目见之？’ 西汉·司马迁《史记·项羽本纪》
+    </p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

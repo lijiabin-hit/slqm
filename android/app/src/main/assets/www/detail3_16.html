@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="format-detection" content="telephone=no" />-->
+    <!--<meta name="msapplication-tap-highlight" content="no" />-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>清风生酒舍，皓月照书窗</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;清风：清凉的风。酒舍：酒店。《史记·司马相如列传》：“相如与俱之临卭，尽卖其车骑，买一酒舍酤酒，而令文君当鑪。”唐朝刘禹锡《堤上行》之三：“春堤繚绕水徘徊，酒舍旗亭次第开。”宋朝张咏《贻傅逸人》诗：“门连酒舍青苔滑，路近沙汀白鸟分。”
+    </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;皓月：明月。南朝宋谢庄《月赋》：“情紆軫其何託，愬皓月而长歌。”唐朝李白《友人会宿》诗：“良宵宜清谈，皓月未能寝。”宋朝柳永《倾杯乐》词：“皓月初圆，暮云飘散，分明夜色如晴昼。”元朝郑光祖《倩女离魂》第三折：“恰微雨初阴，早皓月穿窗，使行云易飞。”
+    </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    清凉的风从酒舍吹过，皎洁的明月照着书窗。</p>
+    <p>与清风有关的诗句有：</p>
+    <p>清风徐来，水波不兴。苏轼《赤壁赋》</p>
+    <p>清风明月无人管，并作南来一味凉。黄庭坚《鄂州南楼书事》</p>
+    <p>明月别枝惊鹊，清风半夜鸣蝉。辛弃疾《西江月·夜行黄沙道中》</p>
+    <p>清风朗月不用一钱买，玉山自倒非人推。李白《杂歌谣辞·襄阳歌》</p>
+
+    <p>与书窗有关的诗句有：</p>
+    <p>花落春无语，春归鸟自啼。多情是蜂蝶，飞过粉墙西。朱淑真《书窗即事》</p>
+    <p>跳丸屋角去如驰，蠹简窗间卷复披。元老岂无挥玉麈，大儒曾有奋金樵。钓牵鳌极灵根动，斧入牛山杰木衰。白首腐生多感慨，愁来时以酒浇之。刘克庄《书窗》</p>
+
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

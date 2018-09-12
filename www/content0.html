@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="format-detection" content="telephone=no" />-->
+    <!--<meta name="msapplication-tap-highlight" content="no" />-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <!--<link rel="stylesheet" type="text/css" href="jquery/jquery.mobile-1.4.5.css"/>-->
+    <!--<script src="jquery/jquery.mobile-1.4.5.min.js"></script>-->
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>《声律启蒙》简介</h2>
+    <p style="text-align: left;">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;《声律启蒙》是训练儿童应对，掌握声韵格律的启蒙读物。按韵分编，包罗天文、地理、花木、鸟兽、人物、器物等的虚实应对。从单字对到双字对，三字对、五字对、七字对到十一字对，声韵协调，琅琅上口，从中得到语音、词汇、修辞的训练。从单字到多字的层层属对，读起来，如唱歌般。较之其它全用三言、四言句式更见韵味。这类读物，在启蒙读物中独具一格，经久不衰。明清以来，如《训蒙骈句》、《笠翁对韵》等书，都是采用这种方式编写，并得以广泛流传。
+    </p>
+    <p style="text-align: left">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;诗词和对联是中国古代重要的文学形式，两千多年来一直薪火相传，至今仍具有强大的生命力。在古代，自私塾的幼童起，就开始这种文学修养的训练，对声调、音律、格律等都有严格的要求。因此，一些声律方面的著作也应运而生，而其中清朝康熙年间车万育所作的《声律启蒙》，则是其中较有代表性的一种。
+    </p>
+    <p style="text-align: left">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如今我们使用的，是清代光绪癸未年间约公元1883年成都魏朝俊“墨耕堂”私藏的版本，其封面题名为《声律启蒙》，内页所载名为《声律启蒙撮要》，作者题名为“衡山聂铣敏蓉峰重订、邵陵车万育双亭著、湘潭夏大观枫江笺”。此书既名为“撮要”，自然只会节录撮取《声律启蒙》中他们认为最为重要的部分，它分为上、下两卷，只有平声30个韵部（即绝大部分格律诗所用的韵部），很明显，这是撮取了祝明撰写的前两卷，并以它为基础，进行了一些作者认为是必要的删改和修订而成的。
+    </p>
+    <h2>作者简介</h2>
+    <p style="text-align: left">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;车万育（1632~1705年），字双亭，号鹤田，湖南邵阳人。康熙甲辰进士，官至兵科给事中。康熙二年（一六六三），与兄万备同举湖广乡试，1664年成进士，选庶吉士。性刚直，直声震天下，至性纯笃，学问赅博。善书法，所藏明代墨迹最富，有萤照堂明代法书石刻十卷。《宝庆府志》
+    </p>
+    <h2>序言</h2>
+    <p style="text-align: left">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蒋允焄序
+    </p>
+    <p style="text-align: left">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;自骈偶之体兴，而著述家多捃摭故实，俪白妃黄，以为能事，若《编珠》、《岁华丽记》之类，洵为征引宏博，穷讨四库矣！邵陵车万育先生，尝取对偶，自一二字以至十余字，叶以上下平三十韵，所用故实，多取习见，且细为评注，分为二卷，名曰《声律启蒙撮要》。余偶得写本，见其切近，易于记诵，思付剞劂，遍授童蒙。且今功令，凡大小试以及考课馆阁，莫不以声律为殿最。是书也，匪仅为幼学切要之功，且可俾操觚之士，就是书所习见故实，进而求之。因以穷讨四库，备极宏博，用谐声律，以鸣当代之盛，岂不休哉！则即以是书为《编珠》、《岁华丽记》之羽翼，殆无不可。书刻成，用题数语，以弁其端。
+    </p>
+    <p style="text-align: left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;------乾隆三十三年戊子季春赐进士出身知福建福州府事前翰林院检讨金竹蒋允焄题于郡署存朴斋</p>
+</div>
+<!--<div class="ui-grid-d bottom">-->
+    <!--<div class="ui-grid-a ceshi"><a href="test1.html">测试本章</a></div><div class="ui-grid-b ceshi">-->
+    <!--<img src="img/pre.png">-->
+<!--</div><div class="ui-grid-c ceshi">-->
+    <!--<img src="img/play.png">-->
+<!--</div><div class="ui-grid-d ceshi">-->
+    <!--<img src="img/next.png">-->
+<!--</div><div class="ui-grid-d ceshi"><a href="video1.html">视频学习</a>-->
+<!--</div>-->
+<!--</div>-->
+</body>
+
+</html>

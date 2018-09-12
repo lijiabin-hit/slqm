@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>来鸿对去燕</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在这里，鸿指的是大雁，而燕指的是平常飞的燕子。在这是指飞来的大雁和飞走的燕子。大雁归来，燕子飞去。同时，现在来鸿去燕是一个成语，代表着行踪漂泊不定的人。
+    </p>
+    <p>
+        使用这一对的诗句：
+    </p>
+    <p>
+        来鸿去燕江干路，露宿风飞各朝暮。《稚存从新安归作此寄之》黄景仁
+    </p>
+    <p>
+        魏秀仁《花月痕》第二十六回：“如何窈窕如花女，也学来鸿去燕飞。”
+    </p>
+    <p>
+        关于鸿雁的典故：
+    </p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;典故1：唐朝薛平贵远征在外，王宝钏苦守寒窑十数年矢志不移。一日，王宝钏正挑野菜，忽闻空中鸿雁连声呼唤，遂请求代为传书于平贵夫郎，然一时难寻笔墨，情急之下，撕下罗裙，咬破指尖，写下血泪书信，倾诉对爱情忠贞和盼望夫妻团圆的心情。
+    </p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;典故2：汉朝时，苏武出使匈奴，被单于流放北海去放羊。10年后，汉朝与匈奴和亲，但单于仍不让苏武回汉。与苏武一起出使匈奴的常惠，把苏武的情况密告汉使，并设计，让汉使对单于讲：汉朝皇帝打猎射得一雁，雁足上绑有书信，叙说苏武在某个沼泽地带牧羊。单于听后，只有让苏武回汉。后来，人们就用鸿雁比喻书信和传递书信的人。
+    </p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;典故3：公元100 年，汉朝大臣苏武出使匈奴，匈奴单于很欣赏苏武的才能，想迫使苏武投降匈奴，被苏武严辞拒绝。于是单于便将苏武扣下，随后把他流放到荒无人烟的北海（今贝加尔湖）去牧羊，对他说什么时候公羊生了小羊，什么时候就放他归汉。苏武在北海一带放牧十九年，虽含辛茹苦，但始终不曾向单于屈服。后来汉昭帝与匈奴和亲，出使匈奴的汉朝使者问起苏武之事，单于撒谎说苏武已经死了，但这位使者私下里打听到苏武仍然在北海牧羊，于是回去后就把这个情况报告了汉昭帝。当时的霍光想出了一个计谋，又派去一个使者并对单于说：“大汉天子喜欢打猎，有一次射下一只大雁，雁腿上系着一封信，是苏武的亲笔信，上面写着苏武还活着，现在北海牧羊。”单于听后，见无法抵赖，只好放回了苏武。
+    </p>
+    <p>
+        关于燕子的典故：
+    </p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;典故1：相传，燕子是天神的使者。古时候，每年春夏之交，善男信女会在华山南天门外的聚仙坪焚烧黄表，祭天神，求天神保佑。那些没有烧化的黄表碎片被风吹向天空，燕子会上下翻飞，把黄表衔在嘴里，飞去向天神报告善男信女们的虔诚。这个故事叫燕子衔表，是华山十大谜之一。
+    </p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;典故2：还有一个美丽的故事叫玄鸟生商，玄鸟就是燕子。在远古的黄河之滨，一只玄鸟唱着歌儿从空中飞来，带给人们无穷无尽的遐想——它是天的使者，人们对它顶礼膜拜。有一个叫简狄的女人，吞下了一个玄鸟蛋，怀了孕，生下了一个儿子，取名叫契。契，就是阏伯，传说中他是商朝的始祖。
+    </p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;典故3：西周王姬发吃了败仗，逃到一个荒山野岭上，迷路了，又累又饿，几个随从都奄奄一息。这个时候，他困顿极了，不禁仰天长叹：“我姬发含垢隐忍数十年，一心只想推翻残暴的纣王，让天下百姓过上太平幸福的生活，也让我屈死的父王在九泉之下能够瞑目！不想刚刚起兵就败如山倒。这家仇国恨还未报，而今却要死在这荒山野岭，让我有什么脸面去见地下的父王！”说着竟泪流满面。
+    </p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不料，姬发的这番话被不远处的小燕子听到。小燕子心想：早就听说西周王姬发宽厚仁义，勤政爱民。今日有幸听其困顿中的话，让我心有所悲，想我小燕子虽身小力微，当助仁义之君绵薄之力。主意已定，它便邀来数十同伴一起衔食相济。这时姬发已在荒山上转了许久，却不见一个鸟兽，正在苦闷之中。忽然看见头顶飞过一群小燕子，以为正好猎取充饥呢！
+    </p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;好一个英雄，武艺高强，只见他伸手捻三箭，同弓而射，竟射下六只燕子来！又连射了几次，这群燕子全被射下了。姬发与随从吃了这些燕子，大家都说奇怪：怎么每只燕子的嘴里都有小麦粒等食物？
+    </p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;吃饱喝足，姬发带着众人走出困境，收拾残部，重振旗鼓，又请得姜太公做军师，终于推翻了纣王，让百姓过上了好日子。
+    </p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一天，	姬发在后宫湖边的亭子里小睡。恍惚间听见不远处的哭声。姬发心疑，顺着声音走过去，看到一群小燕子在幽林间齐哭。看见姬发，小燕子泣诉道：“大王洪福，怀仁义沥肝胆终逞心愿。天下苍生感大王救苦救难之恩，念之涕零。如今大王恩威齐天，可记得当年走投无路时射燕充饥之事？”姬发想了想，说：“恩，是有此事。”小燕子说：“大王可知，当年你吃的就是我们的肉，喝的就是我们的血啊！当年大王落难时，吐语如泣血，落泪欲成河。我们燕子虽为异类，而同感天地冷暖，漂泊于虚世浮生，日久心生灵性，能通人语。那日有幸遇大王失意，感大王之言，决定以草芥之躯倾力相助。便约来同伴，飞越八个山头衔来食物为大王充饥。不料才飞来一次，就被大王射落给……呜呜……”姬发早就惊得目瞪口呆，半天说不出话。只听燕子继续说：“如今天下已定，百姓安居乐业，到处颂扬大王功德。可是看到我的族类依然南迁北徙，扑风沥雨，居无定所，心中不免悲痛，愿大王怜之……”说完就不见了。姬发惊醒，回味梦中燕语，回忆当年之事，叹息不已。
+    </p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;于是，他命人速传当年生死与共的随从，他们如今都已经是王侯将相了。召来后，尽叙前事，众皆嗟叹。自此感念飞燕之恩。诏告天下：“昔时武王兵败受困，义鸟飞燕衔食相救。武王未知其缘，射杀而尽食其肉。今幸得托梦相告，方知事由。追悔顿足，而木已成舟，不能返绿。前事作古，于后事补。特诏告天下，封飞燕为国鸟。国中人但见燕飞处，不可侵扰射杀，违者必刑。特许飞燕在王侯将相宫中筑巢育子，来去自由。凡国之大事请诸侯来都，飞燕为使，使臣作随…… ”
+    </p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从此以后，燕子过上了幸福的生活。人们都以燕请为尊。可是，谁能老是先弄只燕子再来请人呢？所以后来渐渐演化成“宴请”。再后来到了唐朝，燕子抚育的多了，贵人家里住不下了，便在普通人家里筑巢，有诗为证：“旧时王谢堂前燕，飞入寻常百姓家”。
+    </p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>宝钿对金钗</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>
+        钿和钗都是古代妇女的首饰。钿是花形的，钗就是叉子。镶嵌了珠宝的钿称为宝钿，用黄金白银打制的钗叫做金钗。金钗：古代以贵重金属制成的妇女首饰，似簪，尾分双股，可用于固定发型。
+    </p>
+    <p>
+        运用宝钿的诗词：
+    <p>
+        惟将旧物表深情，钿合金钗寄将去。钗留一股合一扇，钗擘黄金合分钿。《长恨歌》
+    </p>
+    <p>
+        起梁带之制：三品以上，玉梁宝钿，五品以上，金梁宝钿。《新唐书·车服志》
+    </p>
+    <p>
+        太宗美其廉，赐高昌宝钿刀。《新唐书·诸夷蕃将传·阿史那社尒》
+    </p>
+    <p>
+        浅按红牙拍，轻和宝钿筝。《席上闻歌妓》张羽
+    </p>
+    <p>
+        谁家绝世绮帐前，艳粉红脂映宝钿。《东飞伯劳歌》张柬之
+    </p>
+    <p>
+        运用金钗的诗词：
+    </p>
+    <p>
+        钟乳三千两，金钗十二行。《酬思黯戏赠同用狂字》白居易
+    </p>
+    <p>
+        头上金钗十二行，足下丝履五文章。《河中之水歌梁》萧衍
+    </p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

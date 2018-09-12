@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>梁帝讲经同泰寺，汉皇置酒未央宫</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>梁帝讲经同泰寺。南朝梁武帝萧衍，少年英才，在位早期政绩显著，晚年崇尚佛教，大兴寺庙。曾下令在皇宫（今南京）旁修建同泰寺，还曾亲赴同泰寺，脱御服、换法衣出家当和尚，连日讲经。甚至上演了三度出家，三度让朝廷和群臣花费数亿巨资，“赎回皇帝菩萨”的奇葩剧情。为显示虔诚，梁武帝还不近女色，不吃荤，并要求全国效仿，从此开了中国佛教禁食荤腥的先河。痴迷佛教后，使得他没有精力再理朝政，重用的人也出现了奸臣，造成朝政昏暗。
+    </p>
+
+    <p>汉皇置酒未央宫。汉高祖刘邦九年，长安未央宫建成，高祖大朝诸侯群臣，置酒未央前殿。高祖捧玉杯向其父（太上皇）敬酒，说：“以前大人说我是个无赖汉，治产业不如我哥哥刘仲；现在我所取得的业绩，与仲哥相比，谁的多？”殿上群臣皆呼“万岁”！大笑为乐。
+    </p>
+    <p>这两句，以两个皇帝的逸闻进行对比，一个是少年英才，晚年昏聩；一个是少时无赖，却终成大业。
+    </p>
+    
+
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

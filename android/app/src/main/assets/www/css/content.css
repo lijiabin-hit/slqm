@@ -1,0 +1,123 @@
+*{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+@font-face
+{
+    font-family: myFirstFont;
+    src: url('../ttf/Li-Xuke.ttf'),
+    url('../ttf/Li-Xuke.ttf'); /* IE9+ */
+}
+
+@font-face
+{
+    font-family: myFirstFont2;
+    src: url('../ttf/jbwks.TTF'),
+    url('../ttf/Li-Xuke.ttf'); /* IE9+ */
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*background:url("../img/content_bg.jpg");*/
+    /*background-size: 100% 100%;*/
+    /*background-attachment: fixed;*/
+    /*overflow: scroll;*/
+    z-index: 1;
+}
+
+.content h2{
+    margin-top: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: myFirstFont2;
+}
+
+.content p{
+    text-align: center;
+    font-family: myFirstFont2;
+    margin-top: 8px;
+}
+
+.content p:last-child{
+    margin-bottom: 100px;
+}
+
+img{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.back{
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    font-family: myFirstFont2;
+    background: url("../img/content_bg.jpg");
+    background-size: 100% 100%;
+    z-index: 2;
+}
+
+.back a{
+    top: 5px;
+    margin-top: 5px;
+}
+
+#go_back{
+    position: absolute;
+    left: 0px;
+    z-index: 3;
+}
+
+.personal{
+    top: 5px !important;
+    width: 8px;
+    position: absolute;
+    right: 0px;
+    height: 20px;
+    z-index: 3;
+}
+
+.bottom{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 2;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    /*padding: 15px 0px;*/
+    background: url("../img/content_bg.jpg");
+    background-size: 100% 100%;
+}
+
+.ceshi{
+    font-size: 18px;
+    font-family: myFirstFont;
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    margin: 0px;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+
+.ceshi img{
+    position: relative;
+    height: 30px;
+    width: 32px;
+}

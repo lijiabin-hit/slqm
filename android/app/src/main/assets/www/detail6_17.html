@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>落叶舞风高复下，小荷浮水卷还舒</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>
+        落叶在没有风的时候自高枝飘起又落下
+    </p>
+    <p>
+        指落叶的诗词有：
+    </p>
+    <p>
+        春风桃李花开日，秋雨梧桐叶落时。西宫南内多秋草，落叶满阶红不扫。《长恨歌》白居易
+    </p>
+    <p>
+        壮士拂剑，浩然弥哀。萧萧落叶，漏雨苍苔。《二十四诗品》司空图
+    </p>
+    <p>
+        落叶西园风袅袅。催秋老。丛边莫厌金尊倒。《渔家傲·九日欢游何处好》欧阳修
+    </p>
+    <p>
+        晓星明灭。白露点、秋风落叶。故址颓垣，荒烟衰草，溪前宫阙。《柳梢青·晓星明灭》
+    </p>
+    <p>
+        楸槐雨霋霋，凫雁水拍拍。晓行城南路，落叶满阡陌。《秋兴》陆游
+    </p>
+    <p>
+        小荷浮在水中顺水波卷起又舒展开来。
+    </p>
+    <p>
+        指小荷的诗词有：
+    </p>
+    <p>
+        小荷才露尖尖角，早有蜻蜓立上头。《小池》杨万里
+    </p>
+    <p>
+        窥人双燕语雕梁。笑看小荷翻处、戏鸳鸯。《南歌子·雨过林峦静》向子諲
+    </p>
+    <p>
+        棋声惊昼眠。微雨过，小荷翻。榴花开欲然。《阮郎归 初夏》苏轼
+    </p>
+    <p>
+        槐影连阴，竹光搏露，小荷新绿浮圆。《满庭芳·槐影连阴》陈允平
+    </p>
+    <p>
+        语近隔丛莲。相看忘却归来路，遮日小荷圆。《武陵春·秋染青溪天外水》张先
+    </p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

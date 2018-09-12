@@ -1,0 +1,51 @@
+.bottom textarea{
+    position: absolute;
+    width: 65%;
+    left: 2%;
+    top: 13px;
+    height: 24px;
+    border-radius: 8px;
+}
+.bottom button{
+    position: absolute;
+    left: 68%;
+    padding: 8px;
+    margin-right: 15px;
+    background: url("../img/bg5.png") no-repeat center;
+    background-size: 100% auto;
+    text-align: center;
+    font-family: myFirstFont;
+    top: 5px;;
+}
+.bottom img{
+    position: absolute;
+    width: 5%;
+    height: auto;
+    top: 13px;
+    left: 85%;
+}
+.comment{
+    position: relative;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+.comment section{
+    padding: 8px;
+    border-top: solid #A7A7A7 1px;
+}
+.comment section img{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    position: relative;
+    vertical-align: middle;
+}
+.comment section p{
+    font-size: 10px;
+    color: #666;
+    margin: 4px;
+}
+.comment .commentcontent{
+    font-size: 12px;
+    color: black;
+}

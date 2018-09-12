@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>有若对相如</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>
+        有若：孔子弟子，鲁人，状似孔子。相如：蔺相如，战国人。又司马相如，东汉人。
+    </p>
+    <p>
+        有若（前518年-约前五世纪中期）即有子，孔子重要弟子，受儒教祭祀。其氏为有，名若，字子有，或云字子若，未知所据。
+    </p>
+    <p>
+        《史记 仲尼弟子列传》曰:“孔子既没,弟子思慕,有若状似孔子,弟子相与共立为师,师之如夫子时也”。
+    </p>
+    <p>
+        清光绪十七年《肥城县志》载：“有子故里在县西北八十里东故社有家庄，后裔聚族而居”。又载：“有子，若，鲁人，少孔子十三岁。……唐赠卞伯，宋追封平阴候。墓在肥城，乾隆五十年得宋时墓碣，五十一年学使赵佑会同巡抚奏闻，五十三年始以肥城七十二代孙承袭，今移居城内。”孔子去世后，弟子们十分思念他。因有子言行相貌像孔子，对他十分尊重。于是大家共同推举他当老师，尊敬他就象当年对待孔子一般。《史记》载：“孔子即殁，弟子思慕。有若状如孔子，弟子相与并立为师，师之如夫子时也。”
+    </p>
+    <p>
+        有子强识好古，明习礼乐，倡和睦，重礼教。曾提出“礼之用，和为贵”等学说。但亦曾辩证地论述礼与和的关系。他说道：礼的应用，要以能够斟酌损益，从容中和为最可贵。但如果什么事情都死守着礼规不放，有时也会行不通的。一味地用和，而不用礼来规范，也是不行的。《史记》亦载：“有若曰：‘礼之用，和为贵。先王之道，斯为美。小大由之，有所不行，知和而和，不以礼节之，亦不可行也。”有子去世后，葬于肥城，鲁悼公曾向他吊唁志哀。
+    </p>
+    <p>
+        蔺相如，生卒不详，今保定市曲阳县相如村人。战国时赵国上卿，赵国著名的政治家、外交家。他生平最重要的事迹有完璧归赵、渑池之会与负荆请罪这三个事件。
+    </p>
+    <p>
+        战国时期，赵惠文王得到了楚国的和氏璧。秦昭王听说了这件事，就派人给赵惠文王一封书信，表示愿意用十五座城交换这块宝玉。赵惠文王同大将军廉颇及大臣们商量：要是把宝玉给了秦国，秦国的城邑恐怕不可能得到，白白地受骗；要是不给呢，就怕秦军马上来攻打。怎么解决没有确定，想找一个能派到秦国去回复的使者，没能找到。
+    </p>
+    <p>
+        宦者令缪贤说：“我的门客蔺相如可以派去。”赵惠文王问：“你怎么知道他可以呢？”缪贤回答：“为臣曾犯过罪，私下打算逃亡到燕国去，我的门客蔺相如阻拦我，说：‘您怎么会了解燕王呢？’我对他说：‘我曾随从大王在国境上与燕王会见，燕王私下握住我的手，说“愿意跟您交个朋友”。因此我就了解他了，所以想往他那里去。’蔺相如对我说：‘赵国强，燕国弱，而您受宠于赵惠文王，所以燕王想要和您结交。现在您是逃出赵国奔到燕国，燕国怕赵国，这种形势下燕王必定不敢收留您，而且还会把您捆绑起来送回赵国。您不如脱掉上衣，露出肩背，伏在斧刃之下请求治罪，这样也许侥幸被赦免。’臣听从了他的意见，大王也开恩赦免了为臣。为臣私下认为这人是个勇士，有智谋，派他出使很适宜。
+    </p>
+    <p>
+        于是赵惠文王立即召见，问蔺相如说：“秦昭王用十五座城请求交换我的和氏璧，能不能给他？”蔺相如说：“秦国强，赵国弱，不能不答应它。”赵惠文王说：“得了我的宝璧，不给我城邑，怎么办？”蔺相如说：“秦国请求用城换璧，赵国如不答应，赵国理亏；赵国给了璧而秦国不给赵国城邑，秦国理亏。两种对策衡量一下，宁可答应它，让秦国来承担理亏的责任。”赵惠文王说：“谁可以派为使臣？”蔺相如说：“大王如果确实无人可派，臣愿捧护宝璧前往出使。城邑归属赵国了，就把宝璧留给秦国；城邑不能归赵国，我一定把和氏璧完好地带回赵国。”赵惠文王于是就派遣蔺相如带好和氏璧，西行入秦。
+    </p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

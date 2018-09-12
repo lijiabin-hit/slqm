@@ -1,0 +1,24 @@
+.bottom_text{
+    border: none;
+    border-bottom:solid;
+    background-color: transparent;
+    width: 50px;
+}
+.bottom_text:focus{
+    border: none;
+    border-bottom: solid;
+}
+.text_sub{
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.text_sub button{
+    padding: 8px;
+    margin-right: 15px;
+    background: url("../img/bg5.png") no-repeat center;
+    background-size: 100% auto;
+    text-align: center;
+    font-family: myFirstFont;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>庭畔有人持短剑，门前无客曳长裾</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>
+        上联出自《史记·荆柯传》。战国时燕国的太子丹为报仇，想谋刺秦王，用优礼重金聘得刺客荆轲。荆柯便借向秦王献地图的机会，用匕首刺杀秦王，未中，被杀。
+    </p>
+    <p>
+        荆轲（？－前227）战国末期卫人，先世为齐人，喜好读书击剑。卫人称之为“庆卿”，后游历到燕国，被当地称为“荆卿”（或荆叔）。后来，由燕国智勇深沉的“节侠”田光推荐给太子丹，拜为上卿。
+    </p>
+    <p>
+        秦国灭赵后，直逼燕国南界，太子丹震惧，与田光密谋，派他入秦行刺。秦将樊於期因得罪秦王政，叛逃至燕。荆轲献计太子丹，拟以樊於期之头及燕督亢（今河北涿县、易县、固安一带）地图进献秦王，相机行刺。太子丹不忍杀樊，荆轲便私见樊於期，将实情相告，樊於期立即自刎。公元前227年，荆轲带燕督亢地图和樊於期首级，前往秦国进献。秦王大喜，在咸阳宫隆重召见。献图时，图穷匕首见，刺秦王不中，被杀。
+    </p>
+    <p>
+        荆卿喜爱读书、击剑，凭借着剑术游说卫元君，卫元君没有任用他。此后秦国攻打魏国，设置了东郡，把卫元君的旁支亲属迁移到野王。 荆轲漫游曾路经榆次，与盖聂谈论剑术，盖聂对他怒目而视。荆轲出去以后，有人劝盖聂再把荆轲叫回来。盖聂说：“刚才我和他谈论剑术，他谈的有不甚得当的地方，我用眼瞪了他；去找找看吧，我用眼瞪他，他应该走了，不敢再留在这里了。”派人到荆轲住处询问房东，荆轲已乘车离开榆次了。派去的人回来报告，盖聂说：“本来就该走了，刚才我用眼睛瞪他，他害怕了。”
+    </p>
+    <p>
+        荆轲漫游邯郸，鲁句践跟荆轲士博戏，争执博局的路数，鲁句践发怒呵斥他，荆轲却默无声息地逃走了，于是不再见面。
+    </p>
+    <p>
+        下联出自《汉书·贾邹枚路传》。西汉初期，各诸侯王都招聘贤人治国，齐人邹阳投于吴王刘濞麾下。吴王因不满西汉中央政权的政策，图谋造反。邹阳使上书劝阻，文中解释自己之所以投奔吴王的原因时说，是因为“说大王之义”（仰慕大王您的高义）才来投奔的，我如果用尽我的才智，则无论哪个地方都能去求得一个职位，“何王之门不可曳长裾乎？”（哪个诸侯王门前不能让我拖着长袍走来走去呢？）此联是反用其义，说因为王不贤明，故门前没有贤人来投奔。曳，拖。
+    </p>
+    <p>
+        邹阳，散文家，齐人，是西汉时期很有名望的文学家。文帝时，为吴王刘濞门客，以文辩著名于世。吴王阴谋叛乱，邹阳上书谏止，吴王不听，因此与枚乘、严忌等离吴去梁，为景帝少弟梁孝王门客。邹阳"为人有智略，慷慨不苟合"，后被人诬陷入狱，险被处死。他在狱中上书梁孝王，表白自己的心迹。梁孝王见书大悦，立命释放，并尊为上客。邹阳有文七篇，现存两篇，即《上书吴王》、《于狱中上书自明》。
+    </p>
+    <p>
+        因他是吴王的门客，其时叛乱尚未发动，所以只能隐晦曲折地加以劝说，文多隐语，常于言外见意。《于狱中上书自明》，情意恳切，在哀婉悲叹之中包含着激愤感慨。文中反复征引史实，词采华丽，多用排偶，有战国策士说辞气味。《汉书·艺文志》可能即因此把邹阳列入纵横家。
+    </p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

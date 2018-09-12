@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="format-detection" content="telephone=no" />-->
+    <!--<meta name="msapplication-tap-highlight" content="no" />-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>熊对虎</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    1. 熊与虎。汉·张衡 《西京赋》：“熊虎升而挐攫，猿狖超而高援。” 三国·魏·阮籍《元父赋》：“崇陵崔巍，深溪峥嶸，美类不处，熊虎是生。”</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    2. 指熊与虎的图案，古代旗帜上的徽识。因以借指旗帜。
+    《周礼·春官·司常》：“熊虎为旗，鸟隼为旟。” 唐·杜甫 《八哀诗·赠司空王公思礼》：“翠华卷飞雪，熊虎亘阡陌。” 仇兆鳌 注：“熊虎，将士之旗。” 唐·柳宗元 《唐铙歌鼓吹曲·吐谷浑》：“烈烈旆其旗，熊虎杂龙蛇。”</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    3. 比喻凶猛，勇猛。
+    《左传·宣公四年》：“是子也，熊虎之状，而豺狼之声，弗杀，必灭 若敖氏 矣。”《三国志·吴志·周瑜传》：“ 刘备以梟雄之姿，而有关羽 、 张飞 熊虎之将，必非久屈为人用者。”《三国演义》第四五回：“ 瑜曰：‘吾之军士，颇雄壮否？’ 干曰：‘真熊虎之士也。’”</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    4. 借喻勇猛的将士。
+    汉·陈琳 《武军赋》：“衝钩竞进，熊虎争先。” 晋·陆云 《吴故丞相陆公诔》：“帝曰将军，整尔熊虎，赫赫明明，皇舆出祖。”《北齐书·文襄帝纪》：“扬旌北讨，熊虎齐奋，克復中原。”</p>
+ 
+
+
+    <h2>象对犀</h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.象和犀。 2.指象牙和犀角。</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;象和犀可对应的特点则在于，都是庞然大物、皮糙肉厚、且一个象牙，一个有犀角，都是极其珍贵之物。</p>
+
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

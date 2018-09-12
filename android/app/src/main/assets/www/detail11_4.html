@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>陆橘对庄椿</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;陆橘出自于陆绩怀橘。
+    </p>
+    <p>
+        陆绩，三国时吴人也。官至太守，精于天文、历法。其父康，曾为庐州太守，与袁术交好。陆绩年六岁，于九江见袁术。术出桔，绩怀三枚；去，拜辞，堕地。术谓曰：“陆郎作宾客而怀橘乎？”绩跪答曰：“是橘甘，欲怀而遗母。”术奇之，后常称说。（据《三国志》改写）
+    </p>
+    <p>
+        关于陆绩怀橘的典故：
+    </p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;典故1：原文
+        陆绩，三国时吴人也。官至太守，精于天文、历法。其父康，曾为庐州太守，与袁术交好。绩年六，于九江见袁术。术令人出橘食之。绩怀三枚，临行拜辞术，而橘坠地。术笑曰：“陆郎作客而怀橘，何为耶？”绩跪下对曰：“是橘甘，欲怀而遗母。”术曰：“陆郎幼而知孝，大必成才。”术奇之，后常称说。
+    </p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;译文：陆绩，他是三国时期的吴国人。他的官职到了太守，对天文和历法很精通。他的父亲陆康曾经担任庐州太守并与袁术往来密切。陆绩六岁时，在九江拜见袁术。袁术让人（招待）他吃橘子。陆绩在怀里藏了三个橘子。临走时，陆绩（弯腰）告辞袁术，橘子掉落在地上。袁术笑着说：“陆绩，你来别人家做客，怀里怎么还藏着橘子？”陆绩跪在地上，回答道：“橘子很甜，我留给母亲吃。”袁术说：“陆绩这么小就知道孝敬，长大后一定成才。”袁术感到陆绩与众不同，后来经常跟别人称赞他。
+    </p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;典故2：原文
+        陆绩字公纪，吴郡吴人也。官至太守，精于天文、历法。其父康，曾为庐州太守，与袁术交好。绩年六岁，于九江见袁术。术出橘待之，绩怀橘二枚。及归，拜辞堕地。术曰：“陆郎作宾客而怀橘乎？”绩跪答曰：“吾母性之所爱，欲归以遗母。”术大奇之。
+    </p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;译文
+        陆绩，字公纪，是生活在吴郡的吴人。他的官职到了太守，对天文和历法很精通。他的父亲陆康曾经担任庐州太守并与袁术往来密切。陆绩六岁时，在九江拜见袁术。袁术拿出橘子款待他，陆绩把两只橘子放在了怀中。等到回去的时候，陆绩向袁术长拜告别，怀里的橘子掉在了地上。袁术说：“陆郎你来做客为什么还在怀里藏了橘子？”陆绩跪在地上回答道：这橘子是我母亲生性所爱的，我想拿它回去给母亲。”袁术对他大为惊奇。
+    </p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;说明孝心是要从小培养的。陆绩六岁就知道把橘子让给母亲品尝，在他幼小的心灵里已埋下“孝”的种子。孝道是中华民族的传统美德，关心父母，爱护父母直至赡养父母，既是小辈的责任与义务，也是一种高尚的道德。这种道德观要从小培养。
+    </p>
+    <p>
+        庄椿：出自《庄子·逍遥游》："上古有大椿者，以八千岁为春，以八千岁为秋。"
+    译文：上古有叫大椿的古树，它把八千年当作春，把八千年当作秋，这就是长寿。后遂以“椿岁”等指大椿的年岁。用“庄椿”等做祝人长寿之词。
+    </p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

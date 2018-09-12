@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="format-detection" content="telephone=no" />-->
+    <!--<meta name="msapplication-tap-highlight" content="no" />-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>三月春浓，芍药丛中蝴蝶舞</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;古代春季分三个月，即农历正月称孟春，二月称仲春，三月称季春。所以说“三月春浓”，芍药花期就在季春。芍药开完，也就意味了春天快结束了。宋·赵长卿《蝶恋花·暮春》词云：“芍药开残春已尽。红浅香干，蝶子迷花阵。”</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;牡丹被称之为花中之王，芍药则是花中之相。正如宋人王质《蓦山溪·咏茶》词云：“休说休说，世只两名花，芍药相，牡丹王，未尽人间舌。 ”不过虽然近似花王，贵为花相，但芍药在诗词世界里还是常常活在花王的阴影之下。如唐代诗人刘禹锡就在《赏牡丹》一诗里，抑芍药而挺牡丹地写道：庭前芍药妖无格，池上芙蕖净少情。唯有牡丹真国色，花开时节动京城。</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;芍药和牡丹的主要区别有以下几点：1.牡丹是木本，芍药是草本，牡丹可以长到2米高，芍药很难超过1米高；2.牡丹比芍药花期早。牡丹一般在4月中下旬开花，而芍药则在5月上中旬开花；3.牡丹叶片宽，偏灰绿，三裂，而芍药叶片狭窄，较有光泽，上部叶片为梭状单叶。</p>
+
+    <h2>五更天晓，海棠枝上子规啼</h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;古有“杜鹃伤魂”之典。神话传说，战国时期，蜀主杜宇，号望帝。他命令鳌灵开凿巫山治水，鳌灵治水功高，望帝自以德薄，效法尧舜，禅位于鳌灵，帝号“开明”。望帝遂隐于西山。</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;后来，鳌灵居功自傲，独断专行，以致失国。望帝痛悔而死，其魂化为鹃鸟，飞进帝都，登枝悲鸣，泪尽继而泣血。因为望帝姓杜，蜀民故称鹃鸟为“杜鹃”，映山红就是因为染上了杜鹃鸟的啼血，才会开得殷红一片。所以映山红也叫杜鹃花。</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;又因杜鹃啼叫之声，犹如催人“布谷”，也被称为“布谷鸟”，世人感念望帝精魄犹关注农事，规劝劳作，故又将杜鹃鸟称作“子规”。唐·崔涂《春夕》诗云：“蝴蝶梦中家万里，子规枝上月三更。”</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;刚刚说到了“花中之王”和“花中之相”，这里我们再来说说“花中贵妃”。</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;海棠，叶乔木,卵形叶,开淡红或白花,结红、黄色球形果,酸甜可食。海棠花姿潇洒，花开似锦，自古以来是雅俗共赏的名花，素有“花中神仙”、“花贵妃”、“花尊贵”之称，栽在皇家园林中常与玉兰、牡丹、桂花相配植，形成“玉棠富贵”的意境。历代文人多有脍炙人口的诗句赞赏海棠。宋代大诗人陆游曾诗云：“虽艳无俗姿，太皇真富贵。”以形容海棠艳美高雅。</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;海棠之所以被称为花中贵妃，是因为唐玄宗曾以海棠比喻过杨贵妃，请参见本系列第十二讲“海棠春睡早”。</p>
+    
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

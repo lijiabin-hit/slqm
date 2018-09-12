@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>獬豸对麒麟</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>
+        在古代獬豸又称獬廌、解豸(xiè zhì)，是中国古代神话传说中的神兽，体形大者如牛，小者如羊，类似麒麟，全身长着浓密黝黑的毛，双目明亮有神，额上通常长一角，俗称独角兽。
+    </p>
+    <p>
+        在古代古人对獬豸的定义是拥有很高的智慧，懂人言知人性。它怒目圆睁，能辨是非曲直，能识善恶忠奸，发现奸邪的官员，就用角把他触倒，然后吃下肚子。它能辨曲直，又有神羊之称，它是勇猛、公正的象征，是司法“正大光明” “清平公正”“光明天下”的象征。
+    </p>
+    <p>
+       古代关于獬豸的记载有：
+    </p>
+    <p>
+        獬豸，神羊，能辨别曲直，楚王尝获之，故以为冠。"后亦用以指执法者。《后汉书·舆服志下》
+    </p>
+    <p>
+        生前不惧獬豸冠，死来图画麒麟像。关汉卿《玉镜台》第一折
+    </p>
+    <p>
+       麒麟（qí lín）是中国传统瑞兽，性情温和，传说能活两千年。古人认为，麒麟出没处，必有祥瑞。有时用来比喻才能杰出、德才兼备的人。
+    </p>
+    <p>
+        在《礼记·礼运第九》中写到：“麟、凤、龟、龙，谓之四灵”，可见麒麟地位起码与龙同等，并不低于龙。但麒麟又是应龙的孙辈，在《淮南子·地形训》中：“毛犊生应龙，应龙生建马，建马生麒麟，麒麟生庶兽，凡毛者，生于庶兽。”说明麒麟也有中土之兽的说法，但与被《淮南子》、《灵宪》等诸多古籍认为居中主土的黄龙相比，麒麟只有 《易冒》一书将其与青龙等四灵相提并论。
+    </p>
+    <p>
+        关于麒麟从其外部形状上看，集狮头、鹿角，虎眼、麋身、龙鳞、牛尾就于一体；尾巴毛状像龙尾，有一角带肉。但据说麒麟的身体像麝鹿，它被古人视为神宠、仁宠。麒麟长寿，能活两千年。能吐火，声音如雷。“有毛之虫三百六十，而麒麟为之长”（有毛之虫：有毛的动物）。
+    </p>
+    <p>
+        关于史书对麒麟的介绍有：
+    </p>
+    <p>
+        “麒，仁宠也，麋身龙尾一角；麐（麟），牝麒也。”段玉裁注：“状如麕，一角，戴肉，设武备而不为害，所以为仁也。”（汉许慎《说文解字·十》）
+    </p>
+    <p>
+        仁兽也。麕身牛尾，一角。张揖云：牡曰麒，牝曰麟。郭璞曰：麒似麟而无角。（《说文解字》）
+    </p>
+    <p>
+        “出土器车，河出马图，凤凰麒麟，皆在郊棷。”（“椰”同“菽”，沼泽），又：“麟凤龟龙，谓之四灵。”（《礼记》礼运）
+    </p>
+    <p>
+        说明无论是獬豸还是麒麟都是一种同等地位的被人们奉作美好的神物，所以他们也是相对的关系。
+    </p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

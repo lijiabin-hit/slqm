@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>天禄对石渠</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>
+        天禄：《汉书·刘向传》：刘向校书天禄阁。石渠：《汉书·萧何传》：萧何建石渠阁以藏图籍，后成帝用以藏秘书。天禄、石渠：均为西汉长安皇宫之内的殿阁名，都是用来收藏国家图书典籍的地方。
+    </p>
+    <p>
+        天禄，神话传说中的瑞兽。汉代多用为雕刻的装饰品。天禄和麒麟、辟邪并称为古代祭祀的三大神兽。天禄似鹿而长尾，一角者为天禄，无角者为辟邪，可攘除灾难，永安百禄。古人把它们对置于墓前，既有祈护祠墓，冥宅永安之意，亦作为升仙之座骑。天禄又称“天鹿”，也称“挑拨”、“符拨”，与“天命”和“禄位”有关。现代多雕刻成形以避邪，谓能祓除不祥，永绥百禄，故称为天禄。
+    </p>
+    <p>
+        石渠、天禄、麒麟三阁是西汉皇家图书典藏与编校机构。
+    <p>
+        石渠、天禄、麒麟由萧何主持修建，是西汉皇家图书典藏与编校机构，同时兼有“处贤才”之功能，汉代很多学者都曾在其中查阅资料或编校图书。三阁均在长安未央宫内，未央宫是西汉王朝的政治统治中心。
+    </p>
+    <p>
+        西汉专门设计建造图书典藏与编纂机构，这在中国历史上是第一次。此前的商、周至秦代各王朝尽管都设有藏书与校书处，但或者比较简陋，或者只是利用已有的建筑。
+    </p>
+    <p>
+        “石渠”、“天禄”以后成为皇家藏书之别称。乾隆即位后第六年曾下诏书，要求献书，说要“广石渠、天禄之储”，丰富皇家藏书。乾隆三十七年又下诏采书，也说“庶几副在石渠，用储乙览，都是这个意思。清代乾隆、嘉庆年间宫廷编纂有大型著录文献《石渠宝笈》。
+    </p>
+    
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

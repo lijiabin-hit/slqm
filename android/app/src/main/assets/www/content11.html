@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="format-detection" content="telephone=no" />-->
+    <!--<meta name="msapplication-tap-highlight" content="no" />-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>十一真</h2>
+    <p>
+        <a onclick="window.postMessage('11_1')">
+            <ruby>邪<rt>xié</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>正<rt>zhèng</rt></ruby>。
+            <ruby>假<rt>jiǎ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>真<rt>zhēn</rt></ruby>。
+        </a>
+    </p>
+    <p>         <a onclick="window.postMessage('11_2')">
+        <ruby>獬<rt>xiè</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>豸<rt>zhì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>麒<rt>qí</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>麟<rt>lín</rt></ruby>。
+    </a></p>
+    <p>         <a onclick="window.postMessage('11_3')">
+        <ruby>韩<rt>hán</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>卢<rt>lú</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>苏<rt>sū</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>雁<rt>yàn</rt></ruby>。
+    </a></p>
+    <p>         <a onclick="window.postMessage('11_4')">
+        <ruby>陆<rt>lù</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>橘<rt>jú</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>庄<rt>zhuāng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>椿<rt>chūn</rt></ruby>。
+    </a></p>
+    <p>         <a onclick="window.postMessage('11_5')">
+        <ruby>韩<rt>hán</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>五<rt>wǔ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>鬼<rt>guǐ</rt></ruby>，
+        <ruby>李<rt>lǐ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>三<rt>sān</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>人<rt>rén</rt></ruby>。
+    </a></p>
+    <p>         <a onclick="window.postMessage('11_6')">
+        <ruby>北<rt>běi</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>魏<rt>wèi</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>西<rt>xī</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>秦<rt>qín</rt></ruby>。
+    </a></p>
+    <p>         <a onclick="window.postMessage('11_7')">
+        <ruby>蝉<rt>chán</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>鸣<rt>míng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>哀<rt>āi</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>暮<rt>mù</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>夏<rt>xià</rt></ruby>，
+        <ruby>莺<rt>yīng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>啭<rt>zhuàn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>怨<rt>yuàn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>残<rt>cán</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>春<rt>chūn</rt></ruby>。
+    </a></p>
+    <p>         <a onclick="window.postMessage('11_8')">
+        <ruby>野<rt>yě</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>烧<rt>shāo</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>焰<rt>yàn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>腾<rt>téng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>红<rt>hóng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>烁<rt>shuò</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>烁<rt>shuò</rt></ruby>，<br>
+        <ruby>溪<rt>xī</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>流<rt>liú</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>波<rt>bō</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>皱<rt>zhòu</rt></ruby>&nbsp;&nbsp;&nbsp;&nbsp;<ruby>碧<rt>bì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>粼<rt>lín</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>粼<rt>lín</rt></ruby>。
+    </a></p>
+    <p>         <a onclick="window.postMessage('11_9')">
+        <ruby>行<rt>xíng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>无<rt>wú</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>踪<rt>zōng</rt></ruby>，
+        <ruby>居<rt>jū</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>无<rt>wú</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>庐<rt>lú</rt></ruby>，
+        <ruby>颂<rt>sòng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>成<rt>chéng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>酒<rt>jiǔ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>德<rt>dé</rt></ruby>；<br>
+        <ruby>动<rt>dòng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>有<rt>yǒu</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>时<rt>shí</rt></ruby>，
+        <ruby>藏<rt>zàng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>有<rt>yǒu</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>节<rt>jié</rt></ruby>，
+        <ruby>论<rt>lùn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>著<rt>zhù</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>钱<rt>qián</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>神<rt>shén</rt></ruby>。
+    </a></p>
+    <p>         <a onclick="window.postMessage('11_10')">
+        <ruby>哀<rt>āi</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>乐<rt>lè</rt></ruby>。
+        <ruby>富<rt>fù</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>贫<rt>pín</rt></ruby>。
+    </a></p>
+    <p>         <a onclick="window.postMessage('11_11')">
+        <ruby>好<rt>hǎo</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>友<rt>yǒu</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>嘉<rt>jiā</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>宾<rt>bīn</rt></ruby>。
+    </a></p>
+    <p>         <a onclick="window.postMessage('11_12')">
+        <ruby>弹<rt>dàn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>冠<rt>guàn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>结<rt>jié</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>绶<rt>shòu</rt></ruby>。
+    </a></p>
+    <p>         <a onclick="window.postMessage('11_13')">
+        <ruby>白<rt>bái</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>日<rt>rì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>青<rt>qīng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>春<rt>chūn</rt></ruby>。
+    </a></p>
+    <p>         <a onclick="window.postMessage('11_14')">
+        <ruby>金<rt>jīn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>翡<rt>fěi</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>翠<rt>cuì</rt></ruby>，
+        <ruby>玉<rt>yù</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>麒<rt>qí</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>麟<rt>lín</rt></ruby>。
+    </a></p>
+    <p>         <a onclick="window.postMessage('11_15')">
+        <ruby>虎<rt>hǔ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>爪<rt>zhǎo</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>龙<rt>lóng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>麟<rt>lín</rt></ruby>。
+    </a></p>
+    <p>         <a onclick="window.postMessage('11_16')">
+        <ruby>柳<rt>liǔ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>塘<rt>táng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>生<rt>shēng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>细<rt>xì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>浪<rt>làng</rt></ruby>，
+        <ruby>花<rt>huā</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>径<rt>jìng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>起<rt>qǐ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>香<rt>xiāng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>尘<rt>chén</rt></ruby>。
+    </a></p>
+    <p>         <a onclick="window.postMessage('11_17')">
+        <ruby>闲<rt>xián</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>爱<rt>ài</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>登<rt>dēng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>山<rt>shān</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>穿<rt>chuān</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>谢<rt>xiè</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>屐<rt>jī</rt></ruby>，<br>
+        <ruby>醉<rt>zuì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>思<rt>sī</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>漉<rt>lù</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>酒<rt>jiǔ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>脱<rt>tuō</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>陶<rt>táo</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>巾<rt>jīn</rt></ruby>。
+    </a></p>
+    <p>         <a onclick="window.postMessage('11_18')">
+        <ruby>雪<rt>xuě</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>冷<rt>lěng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>霜<rt>shuāng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>严<rt>yǎn</rt></ruby>，
+        <ruby>倚<rt>yǐ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>槛<rt>kǎn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>松<rt>sōng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>筠<rt>jūn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>同<rt>tong</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>傲<rt>ào</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>岁<rt>suì</rt></ruby>；<br>
+        <ruby>日<rt>rì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>迟<rt>chí</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>风<rt>fēng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>暖<rt>nuǎn</rt></ruby>，
+        <ruby>满<rt>mǎn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>园<rt>yuán</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>花<rt>huā</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>柳<rt>liǔ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>各<rt>gè</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>争<rt>zhèng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>春<rt>chūn</rt></ruby>。
+    </a></p>
+    <p>         <a onclick="window.postMessage('11_19')">
+        <ruby>香<rt>xiāng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>火<rt>huǒ</rt></ruby>。&nbsp;
+        <ruby>炭<rt>tàn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>薪<rt>xīn</rt></ruby>。
+    </a></p>
+    <p>         <a onclick="window.postMessage('11_20')">
+        <ruby>日<rt>rì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>观<rt>guān</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>天<rt>tiān</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>津<rt>jīn</rt></ruby>。
+    </a></p>
+    <p>         <a onclick="window.postMessage('11_21')">
+        <ruby>禅<rt>chán</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>心<rt>xīn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>道<rt>dào</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>眼<rt>yǎn</rt></ruby>。
+    </a></p>
+    <p>         <a onclick="window.postMessage('11_22')">
+        <ruby>野<rt>yě</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>妇<rt>fù</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>宫<rt>gōng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>嫔<rt>pín</rt></ruby>。
+    </a></p>
+    <p>         <a onclick="window.postMessage('11_23')">
+        <ruby>仁<rt>rén</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>无<rt>wú</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>敌<rt>dí</rt></ruby>，
+        <ruby>德<rt>dé</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>有<rt>yǒu</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>邻<rt>lín</rt></ruby>。
+    </a></p>
+    <p>         <a onclick="window.postMessage('11_24')">
+        <ruby>万<rt>wàn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>石<rt>shí</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>对<rt>duì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>千<rt>qiān</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>钧<rt>jūn</rt></ruby>。
+    </a></p>
+    <p>         <a onclick="window.postMessage('11_25')">
+        <ruby>滔<rt>tāo</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>滔<rt>tāo</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>三<rt>sān</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>峡<rt>xiá</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>水<rt>shuǐ</rt></ruby>，<br>
+        <ruby>冉<rt>rǎn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>冉<rt>rǎn</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>一<rt>yī</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>溪<rt>xī</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>冰<rt>bīng</rt></ruby>。
+    </a></p>
+    <p>         <a onclick="window.postMessage('11_26')">
+        <ruby>充<rt>chōng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>国<rt>guó</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>功<rt>gōng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>名<rt>míng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>当<rt>dāng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>画<rt>huà</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>阁<rt>gé</rt></ruby>，<br>
+        <ruby>子<rt>zǐ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>张<rt>zhāng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>言<rt>yán</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>行<rt>xíng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>贵<rt>guì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>书<rt>shū</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>绅<rt>shēn</rt></ruby>。
+    </a></p>
+    <p>         <a onclick="window.postMessage('11_27')">
+        <ruby>笃<rt>dǔ</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>志<rt>zhì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>诗<rt>shī</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>书<rt>shū</rt></ruby>，
+        <ruby>思<rt>sī</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>入<rt>rù</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>圣<rt>shèng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>贤<rt>xián</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>绝<rt>jué</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>域<rt>yù</rt></ruby>；<br>
+        <ruby>忘<rt>wàng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>情<rt>qíng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>官<rt>guān</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>爵<rt>jué</rt></ruby>，
+        <ruby>羞<rt>xiū</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>沾<rt>zhān</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>名<rt>míng</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>利<rt>lì</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>纤<rt>xiān</rt></ruby>&nbsp;&nbsp;&nbsp;<ruby>尘<rt>chén</rt></ruby>。
+    </a></p>
+</div>
+<!--<div class="ui-grid-d bottom">-->
+    <!--<div class="ui-grid-a ceshi"><a href="test1.html">测试本章</a></div><div class="ui-grid-b ceshi">-->
+    <!--<img src="img/pre.png">-->
+<!--</div><div class="ui-grid-c ceshi">-->
+    <!--<img src="img/play.png">-->
+<!--</div><div class="ui-grid-d ceshi">-->
+    <!--<img src="img/next.png">-->
+<!--</div><div class="ui-grid-d ceshi"><a href="video1.html">视频学习</a>-->
+<!--</div>-->
+<!--</div>-->
+</body>
+
+</html>

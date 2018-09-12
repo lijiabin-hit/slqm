@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="format-detection" content="telephone=no" />-->
+    <!--<meta name="msapplication-tap-highlight" content="no" />-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>嘉遁幽人，适志竹篱茅舍</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;退隐闲人甘过住房简陋清贫生活。嘉遁：指退隐。</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;竹篱茅舍：竹子围成的篱笆，茅草盖顶的房屋。宋·王淇《梅》诗云：“不受尘埃半点侵，竹篱茅舍自甘心。”宋·释文珦《天地之间有此身》诗云：“竹篱茅舍居来稳，纸帐蒲团趣更真。”</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;幽人：幽隐之人；隐士。宋·苏轼《定惠院寓居月夜偶出》诗：“幽人无事不出门，偶逐东风转良夜。”</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;适志：犹言舒适自得。《庄子·齐物论》：“昔者庄周梦为胡蝶，栩栩然胡蝶也，自喻适志与。”</p>
+
+
+    <h2>胜游公子，玩情柳陌花衢</h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;胜游：快意的游览。唐·刘禹锡《奉和裴侍中将赴汉南留别座上诸公》：“管弦席上留高韵，山水途中入胜游。”金·元好问《探花词》：“美酒清歌结胜游，红衣先为渚莲愁。”明·杨慎《自香松堡至金龙哨》诗：“云隈月渚两风流，并马探春亦胜游。”
+    </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;衢：四通八达的大街。
+    </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;柳陌花衢：旧指妓院或妓院聚集之处。意即纨绔子弟好逛烟花柳巷寻欢作乐。宋·孟元老《<东京梦华录>序》：“新声巧笑于柳陌花衢，按管调弦于茶坊酒肆。”宋·罗烨《醉翁谈录·柳屯田耆卿》:“至今柳陌花衢，歌姬舞女凡吟咏讴唱，莫不以柳七（柳永）官人为美谈。 </p>
+
+
+
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

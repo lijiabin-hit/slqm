@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>榆塞对兰崖</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>
+        榆塞：以坚硬的榆木修建兵塞。秦朝大将蒙恬抗击匈奴时，“累石为城，树榆为塞，匈奴不敢饮马于河。”后以“榆塞”借指边塞。亦有一解专指山海关。兰崖：以山崖御敌。
+    </p>
+    <p>
+        《汉书》卷五十二〈窦田灌韩列传·韩安国〉恢曰：「不然。臣闻凤鸟乘于风，圣人因于时。昔秦缪公都雍，地方三百里，知时宜之变，攻取西戎，辟地千里，并国十四，陇西、北地是也。及后蒙恬为秦侵胡，辟数千里，以河为竟，累石为城，树榆为塞。匈奴不敢饮马于河，置然后敢牧马。夫匈奴独可以威服，不可以仁畜也。以彊弩射且溃之痈也，必不留行矣。若是，则北发月氏可得而臣也。臣故曰击之便。」
+    </p>
+    <p>
+        王恢说：“不是这样。我听说凤乌乘风而飞，圣人因时而制。过去秦穆公定都雍城，地方圆三百里，知道时气机缘的变化，攻取西戎，开辟疆土千余里，吞并十四国，陇西、北地从此成为秦的领地。到后来蒙恬率领军队为秦国进攻匈奴。开辟领土数千里，把黄河南北全部划归秦国境内，用泥土、石块垒砌长城，种植榆树作为屏障，匈奴人以致不敢到黄河边饮马，置烽燧然后才敢放牧马群。对匈奴人只能以威严制服，而不能够用仁义教养。现在凭藉漠的强盛，有万倍于匈奴的资财，分出其中的百分之一用来进攻匈奴，就好像是用强劲的弩机来射穿溃烂的毒疮，必定不会遇到什么阻碍。如果这样征服了匈奴，那么向北征召月氏来，可使他们臣服。臣因此说用兵征伐有利。”
+    </p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

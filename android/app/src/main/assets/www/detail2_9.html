@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="format-detection" content="telephone=no" />-->
+    <!--<meta name="msapplication-tap-highlight" content="no" />-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>秦岭云横，迢递八千远路</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;出自韩愈《左迁至蓝关示侄孙湘》，全诗为“一封朝奏九重天，夕贬潮州路八千。欲为圣明除弊事，肯将衰朽惜残年？云横秦岭家何在，雪拥蓝关马不前。知汝远来应有意，好收吾骨漳江边。”迢（音tiáo）递，遥远的样子。“秦岭云横，迢递八千远路”，形容云彩横于南山，被贬至遥远的八千里外。</p>
+    <p>与秦岭云横有关的诗句有：</p>
+    <p>云横秦岭家何在，雪拥蓝关马不前。 韩愈韩愈《左迁至蓝关示侄孙湘》 </p>
+
+
+    <h2>巫山云洗，嵯峨十二危峰</h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;巫山：《广兴记》巫山在夔州府巫山县，大江之滨，型如巫字，有十二峰。嵯（音cuō）峨：山势高险的样子。危：高。“巫山云洗，嵯峨十二危峰”形容巫山的雨在十二峰之间下着。</p>
+ 
+    <p>与大雁有关的诗句有：</p>
+    <p>巫山不可见，翠岫几重重。曾慥《巫山》   </p>
+    <p>昨夜巫山下，猿声梦里长。李白《宿巫山下》</p>
+    <p>巫山幽阴地，神女艳阳年。刘希夷《巫山怀古》</p>
+    <p>巫山与天近，烟景长青荧。张九龄《巫山高》</p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="format-detection" content="telephone=no" />-->
+    <!--<meta name="msapplication-tap-highlight" content="no" />-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>手擘蟹螯从毕卓，身披鹤氅自王恭</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    毕卓，东晋官员。字茂世，新蔡鲖阳（今安徽临泉鲖城）人。晋元帝太兴末年为吏部郎，因饮酒而废职。《世说新语·任诞篇》载：毕茂世云“一手持蟹螯，一手持酒杯，拍浮酒池中，便足了一生！”所以民间     曾经称他为“蟹神”。这个神当得比较好玩，不是长得像，不是什么传说，也不是保护神，原因居然是因为他嗜好吃蟹！蟹们真够冤。陆放翁《对酒戏咏》中有句：“凭谁为画毕吏部，缚著邻家春瓮边。”毕卓做官时曾夜间醉后盗邻人之酒被缚于酒瓮边，天亮时主人见是毕吏部，大惊，解缚谢罪。他却大笑：“让我闻一夜的酒香，多谢了。”  并让其打酒再饮，大醉而归。至今民间仍有“瓮边醉倒毕吏部，马上扶归李太白”的劝酒对联。
+    他还曾说：“儒以文乱法，侠以武犯禁，自此衰矣。”于是自题一匾于门首：“游息书屋”。后来成为“功格宇宙，勋著八表” 的温峤将军的平南长史，协助温峤做了很多有益之事，直至去世。国画大师齐白石曾有《毕卓盗酒》画作，并题：“宰相归田，囊中无钱。宁可为盗，不肯伤廉。”
+    </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    王恭，字孝伯，东晋太原晋阳人。王蕴之子，晋孝武帝皇后王法慧之兄。
+    有个成语叫身无长物，起源就是王恭。《世说新语·德行》：王恭从会稽还，王大看之。见其坐六尺簟，因语恭：“卿东来，故应有此物，可以一领及我。”恭无言。大去后，即举所坐者送之。既无余席，便坐荐上。后大闻之，甚惊，曰：“吾本谓卿多，故求耳。” 对曰：“丈人不悉恭，恭作人无长物。”
+    </p>
+
+
+
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

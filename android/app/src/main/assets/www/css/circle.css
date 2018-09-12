@@ -1,0 +1,8 @@
+.plus{
+    top: 5px !important;
+    width: 0px;
+    position: absolute;
+    right: 40px;
+    height: 20px;
+    z-index: 3;
+}

@@ -1,0 +1,9 @@
+.content figure{
+    width: 40%;
+    padding: 5%;
+    display: inline-block;
+    padding-bottom: 2%;
+}
+.content figure p{
+    margin-bottom: 0px !important;
+}

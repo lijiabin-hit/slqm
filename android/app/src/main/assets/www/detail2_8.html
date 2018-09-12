@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="format-detection" content="telephone=no" />-->
+    <!--<meta name="msapplication-tap-highlight" content="no" />-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>春日园中莺恰恰，秋天塞外雁雍雍</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;恰恰：像声词，黄莺的叫声。出自杜甫《江畔独步寻花七绝句》“黄四娘家花满蹊，千朵万朵压枝低。流连戏蝶时时见，自在娇莺恰恰啼”。“春日园中莺恰恰”的意思是春天园子中的黄莺清脆的叫着。</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;雍雍：像声词，大雁的叫声。《诗经·邶风·匏有苦叶》有“雍雍鸣雁，旭日始旦”。塞外古代指长城以北的地区，也称塞北。“秋天塞外雁雍雍”的意思是秋天塞北的大雁雍雍地鸣叫。</p>
+    <p>与黄莺有关的诗句有：</p>
+    <p>徐行不记山深浅，一路莺啼送到家。 杨基《天平山中》 </p>
+    <p>独怜幽草涧边生，上有黄鹂深树鸣。韦应物《滁州西涧》 </p>
+    <p>千里莺啼绿映红，水村山郭酒旗风。杜牧《江南春》</p>
+    <p>池上碧苔三四点，叶底黄鹂一两声，日长飞絮轻。 晏殊《破阵子》 </p>
+
+    <p>与大雁有关的诗句有：</p>
+    <p>雨霁鸡栖早，风高雁阵斜。 陆游《幽居》   </p>
+    <p>今年寒到江乡早，未及中秋见雁飞。 陆游《夜归》</p>
+    <p>千里黄云白日曛，北风吹雁雪纷纷。 高适《别董大》</p>
+    <p>天山漠漠长飞雪，来雁遥传沙塞寒。贺朝《从军行》</p>
+    <p>十月边塞寒，四山江阴积。雨雪雁南飞，风尘景西迫。崔湜《塞垣行》</p>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>牧子对渔翁</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>
+    牧子：指牧童。《唐律·厩库》：“诸牧畜产，準所除外，死失及课不充者，一牧长及牧子，笞三十。”《新五代史·杂传十七·刘岳》：“《兔园册》者，乡校俚儒教田夫牧子之所诵也。”
+    <p>渔翁：指老渔人。唐朝杜甫的《秋兴》诗之七：“关塞极天惟鸟道，江湖满地一渔翁。”《水浒传》第一○三回：“五个人一径摇到那打鱼船边，李俊问道：‘渔翁，有大鲤鱼吗？’”。</p>
+    <p>这里是从事不同职业的老和少的相对，一个是放牧为生的小童，一个是养鱼糊口的老翁.</p>
+    </p>
+    <p>
+        与牧童、渔翁有关的诗词有。
+    </p>
+    <p>
+        借问酒家何处有，牧童遥指杏花村。李牧《清明》
+    </p>
+    <p>
+        牧童骑黄牛，歌声振林樾。意欲捕鸣蝉，忽然闭口立。袁枚《所见》
+    </p>
+    <p>
+        村落晚晴天，桃花映水鲜。牧童何处去？牛背一鸥眠。袁枚《题画》
+    </p>
+    <p>
+        偶向芦花深处行, 溪光山色晚来晴。渔家开户相迎接, 稚子争窥犬吠声。李中《渔父》
+    </p>
+    <p>
+        渔翁夜傍西岩宿， 晓汲清湘燃楚竹。柳宗元《渔翁》
+    </p>
+
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>

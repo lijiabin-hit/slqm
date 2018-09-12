@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="format-detection" content="telephone=no" />-->
+    <!--<meta name="msapplication-tap-highlight" content="no" />-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <title>Hello World</title>
+</head>
+
+<body>
+<img src="img/content_bg.jpg" alt="">
+<div class="back">
+    <a id="go_back" onclick="window.history.back();">&lt;&lt;返回</a>
+    <a href="personal.html" class="ui-corner-all ui-icon-user ui-btn-icon-left personal"></a>
+</div>
+<div class="content">
+    <h2>声对色</h2>
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    声色：1.指淫声与女色。2.指美好的声音与颜色。3.特指诗文所表现的意境格调或事物的动人色彩和风格。4.疾言厉色。5.谓争吵。6.泛指说话声音和脸色。7.指相术。</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    1.指淫声与女色。①孔颖达疏:"止声色者，歌乐华丽之事，为助阴静，故止之。"②《史记·乐书》:"放弃《诗》《书》，极意声色， 祖伊 所以惧也。"③明刘基《御柳》诗之二:"君王不为娱声色，无用辛勤学舞腰。"④《东周列国志》第二回:"自姜后去世，益无忌惮，耽于声色，不理朝政。"⑤清蒲松龄《聊斋志异·西湖主》:"由此富有巨万，声色豪奢，世家所不能及。"</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    2. 指美好的声音与颜色。①《吕氏春秋·重己》:"其为声色音乐也，足以安性自娱而已矣。"高诱注:"声，五音宫商角徵羽也;色，青黄赤白黑也。"②宋苏轼《宝绘堂记》:"刘备之雄才也，而好结髦;嵇康之达也，而好锻炼; 阮孚 之放也，而好蜡屐;此岂有声色臭味也哉，而乐之终身不厌。"</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    3.特指诗文所表现的意境格调或事物的动人色彩和风格。①清陈廷焯《白雨斋词话》卷一:"张子野词，古今一大转移也。前此则为晏欧，为温韦，体段虽具，声色未开。"[1] ②朱自清《白采的诗》:"'优生'的概念是早就有了的，但作者将它情意化了，比人更深入一层，便另有一番声色。" 胡也频 《到莫斯科去》四:"而且--这些阔人，每个人还常常打着响亮的哈哈，似乎这声音才更加把客厅显得有声色了。"③茅盾《我走过的道路·一九二二年的文学论战》:"我们约请郭沫若，除慕名想一见外，就是想当面邀他加入文学研究会，以便把《文学旬刊》办得更有声色。"</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    4.疾言厉色。《诗·大雅·皇矣》:"帝谓文王，予怀明德，不大声以色，不长夏以革。"孔颖达疏:"不大其音声以见於颜色而加人，不以年长大以有变革於幼时。"后遂以"声色"为疾言厉色之意。</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    5.谓争吵。①《魏书·洛南王匡传》:"后因与太常刘芳议争权量，遂与肇声色。"②《魏书·儒林传·李业兴》:"若有相乖忤，便即疵毁，乃至声色，加以谤骂。"</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    6.泛指说话声音和脸色。①三国 魏刘劭《人物志·九徵》:"故其刚柔明畅贞固之徵，著乎形容，见乎声色，发乎情味，各如其象。"②宋叶适《张令人墓志》:"常日有不乐，未尝破声色。"③《红楼梦》第四九回:"今儿湘云如此说了，宝钗又如此答，再审度黛玉声色，亦不似往日，果然与宝钗之说相符，心中甚是不解。"④郭沫若 《屈原》第三幕:"先生待我完全就跟自己的嫡亲的女儿一样，丝毫也没有过什么苟且的声色。"</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    7.指相术。常据被相者的声音颜色以揣测其人的吉凶祸福。五代王定保《唐摭言·杂文》:"会公有一门僧，善声色。"</p>
+
+
+    <h2>饱对饥</h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;饱食和饥饿</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;饱对饥，这一句本来直白如水，无须赘述。但表达此意的诗句，有唐代诗圣杜甫《自京赴奉先县咏怀五百字》中的千古名句：“朱门酒肉臭，路有冻死骨”。</p>
+
+    <p style="text-align: center" onclick="window.postMessage('1')">点击出图↑</p>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+
+</html>
